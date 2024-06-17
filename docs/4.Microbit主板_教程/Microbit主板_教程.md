@@ -4,7 +4,7 @@
 
 ---
 
-（1）Micro:bit是什么?
+### （1）Micro:bit是什么?
 
 在我们开始学习keyes 模拟智能家居综合套件之前，首先介绍Micro:bit主板，它是所有项目的核心。
 
@@ -16,11 +16,11 @@ Micro:bit应用非常广泛，可以用于编写电子游戏，声光互动，�
 
 ---
 
-（2）Micro:bit正面和反面面板介绍：                               
+### （2）Micro:bit正面和反面面板介绍：                               
 
-Micro:bit正面面板介绍：
+#### Micro:bit正面面板介绍：
 
-![图片不存在](./media/3fb30f096baa65b534cd637dd07a6dd4.png)
+![Img](./media/1.png)
 
 ① 可编程按钮（自定义功能按钮）: 归根结底它就是一个按钮，对于按钮来说只有一个功能按下去，但是我们可以通过编程使得按钮按下去实现不同的功能。这些按钮组合起来可以实现三种操作，单独按下以及同时按下。
 
@@ -40,9 +40,9 @@ Micro:bit正面面板介绍：
 
 ⑦ 麦克风指示灯:当使用麦克风进行声音录制的时候会亮起。
 
-Micro:bit反面面板介绍：
+#### Micro:bit反面面板介绍：
 
-![图片不存在](./media/740dd8db11dd950d60eaa0c4b1bbdb4a.png)
+![Img](./media/2.png)
 
 ① 声音和蓝牙天线，通过这根天线，可以实现不同开发板之间通过声音进行通信，或者使用蓝牙与其他的设备进行通信。
 
@@ -84,9 +84,9 @@ Micro:bit反面面板介绍：
 
 ---
 
-（3）Micro:bit V2 引脚配置介绍，如下图所示：
+### （3）Micro:bit V2 引脚配置介绍，如下图所示：
  
-![图片不存在](./media/467124f768e77f0bcbd969d4387d3f0c.png)
+![Img](./media/3.png)
 
 Micro:bit V2 引出的引脚中，其引脚功能分类如下表所示：
 
@@ -105,7 +105,7 @@ Micro:bit V2 引出的引脚中，其引脚功能分类如下表所示：
   
 ---
 
-（4）Micro:bit主板使用注意事项：
+### （4）Micro:bit主板使用注意事项：
 
 a. Micro:bit主板上有很多精密的电子元件，建议戴上硅胶保护套进行使用，防止短路。
 
@@ -129,7 +129,7 @@ g. 禁止放在金属制品上使用，以免发生短路。
 
 MakeCode编辑器网站：[https://microbit.org/code/](https://microbit.org/code/) 
 
-MakeCode编辑器详细的使用说明方法请参考链接：[http://wikikeyes-makecode.readthedocs.io/](http://wikikeyes-makecode.readthedocs.io/)
+MakeCode编辑器详细的使用说明方法请参考链接：[https://www.keyesrobot.cn/projects/MakeCode/en/latest/](https://www.keyesrobot.cn/projects/MakeCode/en/latest/)
 
 ---
 
@@ -139,665 +139,665 @@ MakeCode编辑器详细的使用说明方法请参考链接：[http://wikikeyes-
 
 ---
 
-项目01 心跳
+### 项目01 心跳
 
-![图片不存在](./media/1e429eba679d0adf7294cc4c77e08d75.png)
+![Img](./media/4.png)
 
-1. 实验说明：
+#### 1. 实验说明：
 
 首先先来练习一个不需要其他辅助元件，只需要一块Micro:bit主板，一根Micro USB数据线与一台计算机的简单实验，让Micro:bit主板上的点阵显示“心跳”，这是一个让Micro:bit主板和计算机通信的实验，这也是一个入门实验，希望可以带领大家进入Micro:bit的魔幻世界。
 
-2. 准备：
+#### 2. 准备：
 
 （1）通过Micro USB线连接Micro:bit主板和电脑。
 
-![图片不存在](./media/1e429eba679d0adf7294cc4c77e08d75.png)
+![Img](./media/4.png)
 
 （2）打开离线版本或Web版本的MakeCode。 
 
-![图片不存在](./media/6a26b93986e4f555685828e2e9f00bb4.png)
+![Img](./media/5.png)
 
 如果是选择通过导入 **.Hex** 文件来加载项目，请单击“导入”。(方法请参照链接：[http://makecode-ide.readthedocs.io/](http://makecode-ide.readthedocs.io/)) 
 
-![图片不存在](./media/2e72d106eef8a2ce90e871ced3fe9b78.png)
+![Img](./media/6.png)
 
 如果要一一拖动代码块，请单击“**新建项目**”。
 
-![图片不存在](./media/c25f3511fbe9aa08c5e89f90a98dbaaf.png)
+![Img](./media/7.png)
 
-3. 实验代码：                                                                                
+#### 3. 实验代码：                                                                                
 
-![图片不存在](./media/a7779451c7b9c07adf7b8362f42e8aa7.png)
+![Img](./media/8.png)
 
-4. 实验结果:  
+#### 4. 实验结果:  
 
-按照之前的方式将代码下载到Micro:bit主板，Micro USB数据线不要拔下来，利用Micro USB数据线上电，Micro:bit主板上的LED点阵屏切换显示“❤”图案和“![图片不存在](./media/eec6a7fea069b770f4998872e06a593f.png)”图案，循环进行。
+按照之前的方式将代码下载到Micro:bit主板，Micro USB数据线不要拔下来，利用Micro USB数据线上电，Micro:bit主板上的LED点阵屏切换显示“❤”图案和“![Img](./media/9.png)”图案，循环进行。
 
 <span style="color: rgb(255, 76, 65);">如果存在下载问题，请断开Micro USB线和Micro:bit主板，然后重新连接它们并重新打开MakeCode编辑器，以尝试再次下载。
 </span>
 
-![图片不存在](./media/48abf23011865f21858ef61dab8a1b6d.png)
+![Img](./media/10.png)
 
-![图片不存在](./media/e392b4fd81fc1838eb1ea5bb53245164.png)
+![Img](./media/11.png)
 
-5. 代码说明:
+#### 5. 代码说明:
 
-![图片不存在](./media/5c70f4098ba51fae6ec8e198741028fd.png) 
+![Img](./media/83.png) 
 
 仅运行一次以启动程序。
 
-![图片不存在](./media/fba6267bf7fbe4a5613f4974938d4865.png)
+![Img](./media/84.png)
 
 程序循环运行。 
 
-![图片不存在](./media/59e4602aa26857ec6e6611e44910cafa.png)
+![Img](./media/85.png)
 
 在Microbit主板上的LED点阵上绘制特定图案。
 
 ---
 
-项目02 LED点阵中单个LED显示
+### 项目02 LED点阵中单个LED显示
 
-![图片不存在](./media/ac63fb9c55942c7f16c9a953f26b2bfa.png)
+![Img](./media/12.png)
 
-1. 实验说明：
+#### 1. 实验说明：
 
 Micro:bit主板的LED点阵共由25个发光二极管组成，5个一组，分别对应X和Y方向，形成一个5×5的矩阵，且每个发光二极管是放置在行线（X）和列线（Y）的交叉点上，我们可以通过设置坐标点来实现对25个LED中某一个LED的控制。例如，想要LED点阵中第1行第1个LED点亮，可以设置坐标点为（0，0）；第1行第3个LED点亮，可以设置坐标点为（2，0）；第1列第5个LED点亮，可以设置坐标点为（0，4）；第3列第2个LED点亮，可以设置坐标点为（2，1），依此类推。
 
-![图片不存在](./media/cd05ae20aaece16272d17d5f702440be.png)
+![Img](./media/13.png)
 
-2. 准备：
+#### 2. 准备：
 
 （1）通过Micro USB线连接Micro:bit主板和电脑。
 
-![图片不存在](./media/1e429eba679d0adf7294cc4c77e08d75.png)
+![Img](./media/4.png)
 
 （2）打开离线版本或Web版本的MakeCode。 
 
-![图片不存在](./media/6a26b93986e4f555685828e2e9f00bb4.png)
+![Img](./media/5.png)
 
 如果是选择通过导入 **.Hex** 文件来加载项目，请单击“导入”。(方法请参照链接：[http://makecode-ide.readthedocs.io/](http://makecode-ide.readthedocs.io/)) 
 
-![图片不存在](./media/2e72d106eef8a2ce90e871ced3fe9b78.png)
+![Img](./media/6.png)
 
 如果要一一拖动代码块，请单击“**新建项目**”。
 
-![图片不存在](./media/c25f3511fbe9aa08c5e89f90a98dbaaf.png)
+![Img](./media/7.png)
 
-3. 实验代码：                                                                                
+#### 3. 实验代码：                                                                                
 
-![图片不存在](./media/6558f73ba394527d0a23ee4c9e2443a4.png)
+![Img](./media/14.png)
 
-4. 实验结果：
+#### 4. 实验结果：
 
 按照之前的方式将代码下载到Micro:bit主板，Micro USB数据线不要拔下来，利用Micro USB数据线上电，我们就可以看到切换坐标点(1,0)的LED的亮灭状态，持续0.5s，再次切换坐标点(1,0)的LED的亮灭状态，持续0.5s；点亮坐标点(3,4)的LED，持续0.5s，熄灭坐标点(3,4)的LED，持续0.5s。循环进行。
 
-![图片不存在](./media/24bd1cdae853a7676de7f3fabd8bcffb.png)
+![Img](./media/15.png)
 
-![图片不存在](./media/d7574bea2fd0a80bf738bb76dd238f93.png)
+![Img](./media/16.png)
 
-5. 代码说明:
+#### 5. 代码说明:
 
-![图片不存在](./media/5c70f4098ba51fae6ec8e198741028fd.png)
+![Img](./media/83.png)
 
 仅运行一次以启动程序。 
 
-![图片不存在](./media/fba6267bf7fbe4a5613f4974938d4865.png) 
+![Img](./media/84.png) 
 
 程序循环运行。 
 
-![图片不存在](./media/4c5833deeececfed74f50ef968880364.png)
+![Img](./media/86.png)
 
 数字打开或关闭Microbit主板上的LED点阵屏。
 
-![图片不存在](./media/123f6789416d75fda93aad0de932e442.png)
+![Img](./media/87.png)
 
 切换处于坐标x0 y0的LED亮度，数字0可以更改成其他数字。
 
-![图片不存在](./media/088104c58121cd888c3eb8a63e255f7d.png)
+![Img](./media/88.png)
 
 点亮处于坐标x0，y0的LED，数字0可以更改成其他数字。
 
-![图片不存在](./media/b01e0010e699d893a4a31e362e52e1cb.png)
+![Img](./media/89.png)
 
 熄灭处于坐标x0 y0的LED，数字0可以更改成其他数字。
 
-![图片不存在](./media/3b47ec444524a1b614542de46b693502.png)
+![Img](./media/90.png)
 
 延时，单位为毫秒。
 
 ---
 
-项目03 5 x 5 LED点阵图案显示
+### 项目03 5 x 5 LED点阵图案显示
 
-![图片不存在](./media/ac63fb9c55942c7f16c9a953f26b2bfa.png)
+![Img](./media/12.png)
 
-1. 实验说明： 
+#### 1. 实验说明： 
                                                                                
 点阵在我们生活中很常见，很多都有用到它，比如LED广告显示屏，电梯显示楼层，公交车报站等等。
 
 Micro:bit主板的LED点阵共由25个发光二极管组成，上一课我们已经讲过通过设置坐标点来实现对LED点阵的25个LED中的某个LED的控制，这样可以通过设置多个坐标点控制多个LED的亮灭使得LED点阵能够显示图案、数字、字符串。我们也可以在特定代码中通过点击 LED点阵的灰白色小正方形点亮 LED点阵对应的LED来实现LED点阵显示图案、数字、字符串。除了上述方法还可以使用自定义图案使LED点阵显示图案。
 
-2. 准备：
+#### 2. 准备：
 
 （1）通过Micro USB线连接Micro:bit主板和电脑。
 
-![图片不存在](./media/1e429eba679d0adf7294cc4c77e08d75.png)
+![Img](./media/4.png)
 
 （2）打开离线版本或Web版本的MakeCode。 
 
-![图片不存在](./media/6a26b93986e4f555685828e2e9f00bb4.png)
+![Img](./media/5.png)
 
 如果是选择通过导入 **.Hex** 文件来加载项目，请单击“导入”。(方法请参照链接：[http://makecode-ide.readthedocs.io/](http://makecode-ide.readthedocs.io/)) 
 
-![图片不存在](./media/2e72d106eef8a2ce90e871ced3fe9b78.png)
+![Img](./media/6.png)
 
 如果要一一拖动代码块，请单击“**新建项目**”。
 
-![图片不存在](./media/c25f3511fbe9aa08c5e89f90a98dbaaf.png)
+![Img](./media/7.png)
 
-3. 实验程序：
+#### 3. 实验程序：
 
-![图片不存在](./media/8effea1b534f1821f70980700a8c4fb3.png)
+![Img](./media/17.png)
 
-4. 实验结果： 
+#### 4. 实验结果： 
 
-用同样的方法将代码下载到Micro:bit主板，Micro USB数据线不要拔下来，利用Micro USB数据线上电，我们就可以看到Micro:bit主板的5×5 LED点阵开始显示数字1、2、3、4、5，然后循环显示“向下”图案![图片不存在](./media/c75ef48ef482689655f227548eb9b7d3.png)、字符串“Hello!”、“心”图案![图片不存在](./media/73a6d9a224726be82a79fa72653243bd.png)、“东北”方向图案![图片不存在](./media/6f47353f9b2cea85abf88406a22ebc06.png)、“东南”方向图案![图片不存在](./media/8e82bc2748807f9f999e6470182484ad.png)、“西南”方向图案![图片不存在](./media/855bd88d8c265e9151318b53d3eb3f08.png)和“西北”方向图案![图片不存在](./media/d6061c5a4546f4d264c2c1cf58cc6789.png)。
+用同样的方法将代码下载到Micro:bit主板，Micro USB数据线不要拔下来，利用Micro USB数据线上电，我们就可以看到Micro:bit主板的5×5 LED点阵开始显示数字1、2、3、4、5，然后循环显示“向下”图案![Img](./media/18.png)、字符串“Hello!”、“心”图案![Img](./media/19.png)、“东北”方向图案![Img](./media/20.png)、“东南”方向图案![Img](./media/21.png)、“西南”方向图案![Img](./media/22.png)和“西北”方向图案![Img](./media/23.png)。
 
-5. 代码说明:
+#### 5. 代码说明:
 
-![图片不存在](./media/cb0ceacd75ff5c948211a97325f95132.png)
+![Img](./media/91.png)
 
 在LED点阵显示数字。 
 
-![图片不存在](./media/e59163029f12d60b839fffc571c9a97f.png)
+![Img](./media/92.png)
 
 在Microbit主板上的LED点阵上绘制任意图案。
 
-![图片不存在](./media/8b1abc480ee59b2251da7613ed0c507e.png)
+![Img](./media/93.png)
 
 LED点阵滚动显示字符串。
 
-![图片不存在](./media/b76c77375538efecfc1b5d2a337efd7f.png)
+![Img](./media/94.png)
 
 LED点阵点亮对应的LED显示各个方向的箭头图案。
 
-![图片不存在](./media/01b57f0dd24b7844951aadfc2481b6b4.png)
+![Img](./media/95.png)
 
 清空屏幕。
 
 ---
 
-项目04 可编程按键
+### 项目04 可编程按键
 
-![图片不存在](./media/cfb74d545bd517fc8ae308da6f36e4b3.png)
+![Img](./media/24.png)
 
-1. 实验说明：
+#### 1. 实验说明：
 
-![图片不存在](./media/2bc9404cc738b02333f3247e881d5d5b.png) 
+![Img](./media/25.png) 
 
 按键可以控制电路的通断，把按键接入电路中，不按下按键的时候电路是断开的，一按下按键电路就通啦，但是松开之后就又断了。可是为什么按下才通电呢？这得从按键的内部构造说起。没按下之前，电流从按键的一端过不去另一端，按键的两端就像两座山，中间隔着一条河，我们在这座山过不去另一座山；按下的时候，按键内部的金属片把两边连接起来让电流通过，就像搭了一座桥，把两座山连接起来。
 
-按键内部结构如图：![图片不存在](./media/8c30fb6db5677ccac7736cbdb0c2f574.png)，未按下按键之前，1、2就是导通的，3、4也是导通的，但是1、3或1、4或2、3或2、4是断开（不通）的；只有按下按键时，1、3或1、4或2、3或2、4才是导通的。
+按键内部结构如图：![Img](./media/26.png)，未按下按键之前，1、2就是导通的，3、4也是导通的，但是1、3或1、4或2、3或2、4是断开（不通）的；只有按下按键时，1、3或1、4或2、3或2、4才是导通的。
 
 Micro:bit主板有三个按键，反面的是复位按钮，正面的是两个可编程按键，通过对两个可编程按键组合可以有三种组合，作为输入元件。我们结合上节课的LED点阵，一起来学习按键吧。按下Micro:bit主板上按键A，条形图高度值增加5，表现为LED点阵亮的行数增加；按下按键B，减少条形图高度，表现为LED点阵亮的行数减少。
                    
-2. 准备：
+#### 2. 准备：
 
 （1）通过Micro USB线连接Micro:bit主板和电脑。
 
-![图片不存在](./media/1e429eba679d0adf7294cc4c77e08d75.png)
+![Img](./media/4.png)
 
 （2）打开离线版本或Web版本的MakeCode。 
 
-![图片不存在](./media/6a26b93986e4f555685828e2e9f00bb4.png)
+![Img](./media/5.png)
 
 如果是选择通过导入 **.Hex** 文件来加载项目，请单击“导入”。(方法请参照链接：[http://makecode-ide.readthedocs.io/](http://makecode-ide.readthedocs.io/)) 
 
-![图片不存在](./media/2e72d106eef8a2ce90e871ced3fe9b78.png)
+![Img](./media/6.png)
 
 如果要一一拖动代码块，请单击“**新建项目**”。
 
-![图片不存在](./media/c25f3511fbe9aa08c5e89f90a98dbaaf.png)
+![Img](./media/7.png)
 
-3. 实验程序：
+#### 3. 实验程序：
                                                                               
 **（3）完整的代码程序**
 
-![图片不存在](./media/6ec05ecb59a1ab7b52f7b2069c5c35c7.png)
+![Img](./media/27.png)
 
-4. 实验结果：
+#### 4. 实验结果：
 
 用同样的方式将程序下载到Micro:bit主板，Micro USB数据线不要拔下来，利用Micro USB数据线上电，按下Micro:bit主板上按键A，条形图高度值增加5，表现为LED点阵亮的行数增加；按下按键B，减少条形图高度，表现为LED点阵亮的行数减少。
 
-5. 代码说明:
+#### 5. 代码说明:
 
-![图片不存在](./media/4808beda0d617b1728eec834210b125f.png)
+![Img](./media/96.png)
 
 设置变量“x”的初始值为0。
 
-![图片不存在](./media/91becabef8334c3d0c9c1d6179fc3ac2.png)
+![Img](./media/97.png)
 
 以1为幅度更改变量值x，数字1可以改成其他数字。
 
-![图片不存在](./media/ff14836d47dbfca5757806e18fd890f8.png)
+![Img](./media/98.png)
 
 按下micro: bit主板上正面的按键。
 
-![图片不存在](./media/d868c91eb3e5d3d3e0c0660f677c58ee.png)
+![Img](./media/99.png)
 
 点亮LED点阵中LED绘制条形图，最高点亮25个LED。
 
-![图片不存在](./media/3f0b391e26fdf207e8905b6c2edfe33e.png)
+![Img](./media/100.png)
 
 如果ture里的表达式为真，则执行“则”下面的代码。
 
-![图片不存在](./media/75789f1ba29860f32888b677c5ae388a.png)
+![Img](./media/101.png)
 
 获取变量x。
 
 ---
 
-项目05 学习测温度
+### 项目05 学习测温度
 
-1. 实验说明：
+#### 1. 实验说明：
 
 Micro:bit主板实际上并不带温度传感器，而是采用nRF52833芯片内置的温度传感器进行温度检测，所以检测的温度更接近芯片的温度，可能与周围环境温度存在一定的误差。在这一课程中，我们利用该传感器测试当前环境中的温度，并通过检测的温度范围来控制LED点阵显示不同的图案。
 
 <span style="color: rgb(255, 76, 65);">注意：Micro:bit主板的温度传感器在这里：</span>
 
-![图片不存在](./media/b8b10159eaf6b07cd60738aa9fcd22b5.png)
+![Img](./media/28.png)
 
-2. 准备：
+#### 2. 准备：
 
 （1）通过Micro USB线连接Micro:bit主板和电脑。
 
-![图片不存在](./media/1e429eba679d0adf7294cc4c77e08d75.png)
+![Img](./media/4.png)
 
 （2）打开离线版本或Web版本的MakeCode。 
 
-![图片不存在](./media/6a26b93986e4f555685828e2e9f00bb4.png)
+![Img](./media/5.png)
 
 如果是选择通过导入 **.Hex** 文件来加载项目，请单击“导入”。(方法请参照链接：[http://makecode-ide.readthedocs.io/](http://makecode-ide.readthedocs.io/)) 
 
-![图片不存在](./media/2e72d106eef8a2ce90e871ced3fe9b78.png)
+![Img](./media/6.png)
 
 如果要一一拖动代码块，请单击“**新建项目**”。
 
-![图片不存在](./media/c25f3511fbe9aa08c5e89f90a98dbaaf.png)
+![Img](./media/7.png)
 
-3. 实验程序：
+#### 3. 实验程序：
 
 通过温度控制Micro:bit主板上点阵显示不同图案（<span style="color: rgb(255, 76, 65);">注意：程序中的温度值可以根据当地环境适当的调整</span>）
 
-![图片不存在](./media/d2bfbd7b43769239eb78a56457e76350.png)
+![Img](./media/29.png)
 
-4. 实验结果：
+#### 4. 实验结果：
 
-按照之前的方式将程序下载到Micro:bit主板，Micro USB数据线不要拔下来，利用Micro USB数据线上电，外界环境中的温度小于35℃时，Micro:bit主板的5×5LED点阵中显示图案![图片不存在](./media/8d99c9b7569cbcf3b9d5757907028541.png)，用手按住Micro:bit主板的温度传感器，温度大于等于35℃时，5×5LED点阵中显示图案![图片不存在](./media/625a08b9bacdb62c5a59caa0988c9f78.png)。
+按照之前的方式将程序下载到Micro:bit主板，Micro USB数据线不要拔下来，利用Micro USB数据线上电，外界环境中的温度小于35℃时，Micro:bit主板的5×5LED点阵中显示图案![Img](./media/30.png)，用手按住Micro:bit主板的温度传感器，温度大于等于35℃时，5×5LED点阵中显示图案![Img](./media/31.png)。
 
-5. 代码说明:
+#### 5. 代码说明:
 
-![图片不存在](./media/51858c8f7fdfc5128511c14d7c674c2b.png)
+![Img](./media/103.png)
 
 micro: bit主板上的温度传感器检测外界温度。
 
-![图片不存在](./media/afcd9bbe5b7445ab6f574c464c7b6e0c.png)
+![Img](./media/102.png)
 
 如果ture里的表达式为真，则执行“则”下面的代码；如果ture里的表达式为假，则执行“否则”下面的代码。
 
 ---
 
-项目06 地磁传感器
+### 项目06 地磁传感器
 
-![图片不存在](./media/293a644a14c00057ffb38ebfcf9fb27d.png)
+![Img](./media/32.png)
 
-1. 实验说明：
+#### 1. 实验说明：
 
 本实验项目主要介绍Micro:bit地磁传感器的使用，地磁传感器除了检测地磁场强度外，还能当作指南针确定方向，同时也是航姿参考系统(AHRS)的重要组成部分。Micro:bit V2主板采用的是LSM303AGR 地磁传感器，磁场动态范围为±50 gauss。在micro:bit V2主板中，磁力检测、指南针积木块均用到了磁力计栏，本实验中，将先介绍指南针，然后查看磁力计原始数据。常见的指南针主要部件是一根磁针，在地磁场的作用下可以转动并指向地磁北极（地磁北极是在地理南极附近），用来辨别方向。
 
 micro:bit内部的一个地磁传感器（磁力计、指南针），我们可以读取这个磁力计的读数来判断方位，得到相对于北磁极的数值。返回值是0到360之间的数值，在磁力计首次开始工作（带到新位置后）时系统会自动要求我们对micro:bit主板校准，正确的校准方式是旋转micro:bit主板。需要注意的是，附近要是有金属物件可能会影响读数和校准准确性。
 
-2. 准备：
+#### 2. 准备：
 
 （1）通过Micro USB线连接Micro:bit主板和电脑。
 
-![图片不存在](./media/1e429eba679d0adf7294cc4c77e08d75.png)
+![Img](./media/4.png)
 
 （2）打开离线版本或Web版本的MakeCode。 
 
-![图片不存在](./media/6a26b93986e4f555685828e2e9f00bb4.png)
+![Img](./media/5.png)
 
 如果是选择通过导入 **.Hex** 文件来加载项目，请单击“导入”。(方法请参照链接：[http://makecode-ide.readthedocs.io/](http://makecode-ide.readthedocs.io/))
 
-![图片不存在](./media/2e72d106eef8a2ce90e871ced3fe9b78.png)
+![Img](./media/6.png)
 
 如果要一一拖动代码块，请单击“**新建项目**”。
 
-![图片不存在](./media/c25f3511fbe9aa08c5e89f90a98dbaaf.png)
+![Img](./media/7.png)
 
-3. 实验程序1：
+#### 3. 实验程序1：
 
 按下按键A的时候，可以在屏幕上显示磁力计的读数。
 
-![图片不存在](./media/5aa40cbb8b4fae9aa9db461d4c5f2ec9.png)
+![Img](./media/33.png)
 
 程序说明：首先必须对Micro:bit进行校准，因为每个地方地磁场不同，对结果有比较大的的影响，如果是第一次使用指南针，Micro:bit会自动提示需要校准。
 
-4. 实验结果1:  
+#### 4. 实验结果1:  
 
 按照之前的方式将程序1下载至Micro: bit主板，micro USB数据线不要拔下来，利用Micro USB数据线上电，按下Micro:bit主板上正面按键A时，Micro:bit主板首先提示校准，屏幕(LED点阵)提示:“TILT TO FILL SCREEN”,然后进入校准界面，校准方式为：旋转Micro:bit主板，使得屏幕(LED点阵)画一个封闭的正方形（25个LED都点亮），如下图所示：
 
-![图片不存在](./media/f1987010d1111400b4075f6557727f3e.png)
+![Img](./media/34.png)
 
-当封闭的正方形画好后，会显示一个“笑脸”图案![图片不存在](./media/3fff2b955163f3fec692c4b4eb476457.png)，表示校准完成。
+当封闭的正方形画好后，会显示一个“笑脸”图案![Img](./media/35.png)，表示校准完成。
 
 校准完成后，当每次按下按键A的时候，直接在屏幕上显示磁力计读数，北、东、南、西对应0°、90°、180°、270°。
 
-5. 实验程序2：
+#### 5. 实验程序2：
 
 朝不同的方向旋转磁力计，LED点阵显示对应的方向图案。
-![图片不存在](./media/cddcf5dc33cbf4e921e3b58911f10fbd.png)
+![Img](./media/36.png)
 
 该代码块是可以持续磁力计的读数来确定方向，并让箭头指向当前的磁北极。
 
-![图片不存在](./media/2ff467940a80a8a073abbad0f7db4cf8.png)
+![Img](./media/37.png)
 
 如上图所示，如果读数在292.5和337.5之间，就让显示屏显示一个指向右上方的箭头，由于程序里不能输入0.5，所以取的判断数值是293和338。之后再加入其它逻辑判断条件，就得到了完整的程序。
 
-![图片不存在](./media/d625742da6ba55eb3e8b0e222c7ad259.png)
+![Img](./media/38.png)
 
-6. 实验结果2：
+#### 6. 实验结果2：
 
 按照之前的方式将程序2下载到Micro:bit主板，Micro USB数据线不要拔下来，利用Micro USB数据线上电，提示校准（校准方法请参考:上面实验程序1部分），校准完成后，旋转移动Micro:bit主板，可以看到Micro:bit主板上LED点阵显示各方向图案。
 
-7. 代码说明:
+#### 7. 代码说明:
 
-![图片不存在](./media/7029f0e1f7d55aacf3cf71610f67d4d3.png)
+![Img](./media/104.png)
 
 校准指南针。
 
-![图片不存在](./media/86e93395c11e11e8207babe9d6a543b2.png)
+![Img](./media/105.png)
 
 指南针朝向角度。
 
-![图片不存在](./media/749cf549deff12bb0cedbcd2e813dee7.png)
+![Img](./media/106.png)
 
 LED点阵显示指南针朝向角度。
 
 ---
 
-项目07 加速度传感器
+### 项目07 加速度传感器
 
-![图片不存在](./media/1c9c8d63bcbf4d3bd332c9c3cb5ecf46.png)
+![Img](./media/39.png)
 
-1. 实验说明：
+#### 1. 实验说明：
 
 Micro:bit V2主板内置有LSM303AGR 重力加速度传感器（加速度计），其具有8/10/12 bits的分辨率，程序可设置量程为1g、2g、4g、8g，我们常使用加速度计来检测机器的姿态。在本实验项目中，将介绍加速度传感器（加速度计）对几个特殊姿态的检测。
 
-2. 准备：
+#### 2. 准备：
 
 （1）通过Micro USB线连接Micro:bit主板和电脑。
 
-![图片不存在](./media/1e429eba679d0adf7294cc4c77e08d75.png)
+![Img](./media/4.png)
 
 （2）打开离线版本或Web版本的MakeCode。 
 
-![图片不存在](./media/6a26b93986e4f555685828e2e9f00bb4.png)
+![Img](./media/5.png)
 
 如果是选择通过导入 **.Hex** 文件来加载项目，请单击“导入”。(方法请参照链接：[http://makecode-ide.readthedocs.io/](http://makecode-ide.readthedocs.io/)) 
 
-![图片不存在](./media/2e72d106eef8a2ce90e871ced3fe9b78.png)
+![Img](./media/6.png)
 
 如果要一一拖动代码块，请单击“**新建项目**”。
 
-![图片不存在](./media/c25f3511fbe9aa08c5e89f90a98dbaaf.png)
+![Img](./media/7.png)
 
-3. 实验程序：
+#### 3. 实验程序：
 
 对Micro:bit不同的操作，LED点阵显示对应的数字。
 
-![图片不存在](./media/950abcba7469b81fc44d670936aa4aaa.png)
+![Img](./media/40.png)
 
-4. 实验结果: 
+#### 4. 实验结果: 
 
 按照之前的方式将程序下载到Micro:bit主板，利用Micro USB数据线上电，将Micro:bit主板晃动，则可见Micro:bit显示数字1（表明只要有晃动，无论朝哪个方向晃动，该条件都将满足）。
 
 当Micro:bit主板的Logo朝上时，LED点阵显示数字2，Logo朝上示意图如下所示：
 
-![图片不存在](./media/a4f7dcc3178059184e9767b7fd46f476.png)
+![Img](./media/41.png)
 
 同理，Micro:bit主板的Logo朝上时，LED点阵显示数字3(倒立的3)，Logo朝下示意图如下所示：
 
-![图片不存在](./media/2463bbb8b8a7ccbd8d61ffdd4a3c1ecf.png)
+![Img](./media/42.png)
 
 当屏幕朝上（指的是LED点阵朝上）时，LED点阵显示数字4。如下图所示：
 
-![图片不存在](./media/6536a6861a6a4fe5c01325d1017cc2a8.png)
+![Img](./media/43.png)
 
 同理，当屏幕朝下（指的是LED点阵朝下）时，LED点阵显示数字5。
 
 当Micro:bit 主板向左倾斜（<span style="color: rgb(255, 76, 65);">是指LED点阵先朝上，然后再往左边倾斜</span>）时，LED点阵显示数字6。如下图所示：
 
-![图片不存在](./media/77da861c945557c1b7295bef9bbf082f.png)
+![Img](./media/44.png)
 
 同理，当Micro:bit主板向右倾斜（<span style="color: rgb(255, 76, 65);">是指LED点阵先朝上，然后再往右边倾斜</span>）时，LED点阵显示数字7。如下图所示：
 
-![图片不存在](./media/0099c825acbc23d8077afee4125f8e09.png)
+![Img](./media/45.png)
 
 当不小心碰到Micro:bit主板使其从桌面掉落，则为做自由落体运动，此时，Micro:bit主板满足自由落体的条件，则LED点阵显示数字8。（<span style="color: rgb(255, 76, 65);">注意：此方法操作时，很容易把micro:bit主板摔坏，不建议操作</span>）
 <span style="color: rgb(255, 76, 65);">注意：（3g、6g、8g， 如果需要满足此条件，则需要达到3倍，6倍，8倍重力加速度甩动Micro:bit主板。如果你们有兴趣的话，这部分程序可以自己添加）</span>
 
-5. 代码说明:
+#### 5. 代码说明:
 
-![图片不存在](./media/08cdfbc07a14ebf040fa680df1f07135.png)
+![Img](./media/107.png)
 
 完成一个特定的动作(如晃动microbit主板等）时执行操作。
 
 ---
 
-项目08 光照强度检测
+### 项目08 光照强度检测
 
-![图片不存在](./media/ac63fb9c55942c7f16c9a953f26b2bfa.png)
+![Img](./media/46.png)
 
-1. 实验说明：
+#### 1. 实验说明：
 
 本实验将介绍Micro:bit对外界光照强度的检测，由于Micro:bit并不自带光敏传感器，对外界光照强度的检测是通过LED矩阵进行的，LED矩阵被用来感知周围的光，并反复地将LED转换成输入，并采样电压衰减时间。这样检测出来的光照强度大于100时，LED矩阵显示“太阳”标志；否则，LED矩阵上LED灯全部点亮。
 
-2. 准备：
+#### 2. 准备：
 
 （1）通过Micro USB线连接Micro:bit主板和电脑。
 
-![图片不存在](./media/1e429eba679d0adf7294cc4c77e08d75.png)
+![Img](./media/4.png)
 
 （2）打开离线版本或Web版本的MakeCode。 
 
-![图片不存在](./media/6a26b93986e4f555685828e2e9f00bb4.png)
+![Img](./media/5.png)
 
 如果是选择通过导入 **.Hex** 文件来加载项目，请单击“导入”。(方法请参照链接：[http://makecode-ide.readthedocs.io/](http://makecode-ide.readthedocs.io/)) 
 
-![图片不存在](./media/2e72d106eef8a2ce90e871ced3fe9b78.png)
+![Img](./media/6.png)
 
 如果要一一拖动代码块，请单击“**新建项目**”。
 
-![图片不存在](./media/c25f3511fbe9aa08c5e89f90a98dbaaf.png)
+![Img](./media/7.png)
 
-3. 实验程序：
+#### 3. 实验程序：
 
-![图片不存在](./media/38c8fff62df39fe38067a74bf9be5b50.png)
+![Img](./media/47.png)
 
-4. 实验结果：
+#### 4. 实验结果：
 
 按照之前的方式将代码下载到Micro:bit主板，Micro USB数据线不要拔下来，利用Micro USB数据线上电。Micro:bit主板上的LED矩阵感知周围的光强，当光照强度大于100时，LED矩阵显示“太阳”标志；否则，LED矩阵上LED灯全部点亮
 
-5. 代码说明:
+#### 5. 代码说明:
 
-![图片不存在](./media/51bb513875158545912600a01886e5c6.png)
+![Img](./media/108.png)
 
 LED矩阵感知周围的光强，检测光照强度。
 
 ---
 
-项目09 扬声器
+### 项目09 扬声器
 
-![图片不存在](./media/f9e34b3171e29630b2d1d78f86e9232d.png)
+![Img](./media/48.png)
 
-1. 实验说明：
+#### 1. 实验说明：
 
 Micro:bit主板有内置扬声器，这使得在你的项目中添加声音变得非常容易。通过编程使扬声器发出各种各样的音调，让扬声器播放出来。
 
-2. 准备： 
+#### 2. 准备： 
 
 （1）通过Micro USB线连接Micro:bit主板和电脑。
 
-![图片不存在](./media/1e429eba679d0adf7294cc4c77e08d75.png)
+![Img](./media/4.png)
 
 （2）打开离线版本或Web版本的MakeCode。 
 
-![图片不存在](./media/6a26b93986e4f555685828e2e9f00bb4.png)
+![Img](./media/5.png)
 
 如果是选择通过导入 **.Hex** 文件来加载项目，请单击“导入”。(方法请参照链接：[http://makecode-ide.readthedocs.io/](http://makecode-ide.readthedocs.io/)) 
 
-![图片不存在](./media/2e72d106eef8a2ce90e871ced3fe9b78.png)
+![Img](./media/6.png)
 
 如果要一一拖动代码块，请单击“**新建项目**”。
 
-![图片不存在](./media/c25f3511fbe9aa08c5e89f90a98dbaaf.png)
+![Img](./media/7.png)
 
-3. 实验程序：
+#### 3. 实验程序：
 
-![图片不存在](./media/05011899a9c6bb3793a5ec54aa755542.png)
+![Img](./media/50.png)
 
-4. 实验现象: 
+#### 4. 实验现象: 
 
 按照之前的方式将实验程序下载到Micro:bit主板，利用Micro USB数据线上电，Micro:bit主板上的扬声器播放各种声音且LED点阵显示音乐标志图案。
 
-5. 代码说明:
+#### 5. 代码说明:
 
-![图片不存在](./media/0d75bcd5744cf2295e727fc95c7d0319.png)
+![Img](./media/109.png)
 
 蜂鸣器发出各种内置的声音。
 
 ---
 
-项目10 触摸感应logo
+### 项目10 触摸感应logo
 
-![图片不存在](./media/c86a0625c7456f27f64db591ef17b8ad.png)
+![Img](./media/51.png)
 
-1. 实验说明：
+#### 1. 实验说明：
 
 如果你有了Micro:bit主板，你可以在你的项目中使用金色的触摸感应logo作为另一个输入，这就像多了一个按钮。触摸感应采用的是电容式触摸传感器，当你手指按下（或触摸）它时，它就能感应到电场的微小变化----就像你的手机或平板电脑屏幕一样。当你触摸它，能控制Micro:bit板实现某个功能。
 
-2. 准备：
+#### 2. 准备：
 
 （1）通过Micro USB线连接Micro:bit主板和电脑。
 
-![图片不存在](./media/1e429eba679d0adf7294cc4c77e08d75.png)
+![Img](./media/4.png)
 
 （2）打开离线版本或Web版本的MakeCode。 
 
-![图片不存在](./media/6a26b93986e4f555685828e2e9f00bb4.png)
+![Img](./media/5.png)
 
 如果是选择通过导入 **.Hex** 文件来加载项目，请单击“导入”。(方法请参照链接：[http://makecode-ide.readthedocs.io/](http://makecode-ide.readthedocs.io/)) 
 
-![图片不存在](./media/2e72d106eef8a2ce90e871ced3fe9b78.png)
+![Img](./media/6.png)
 
 如果要一一拖动代码块，请单击“**新建项目**”。
 
-![图片不存在](./media/c25f3511fbe9aa08c5e89f90a98dbaaf.png)
+![Img](./media/7.png)
 
-3. 实验代码：
+#### 3. 实验代码：
 
-![图片不存在](./media/b480457dad6a63788e7f95b2079a0c6b.png)
+![Img](./media/52.png)
 
-4. 实验现象：  
+#### 4. 实验现象：  
 
 按照之前的方式将实验代码下载到Micro:bit板，利用Micro USB数据线上电，手指按住Micro:bit主板上“Logo”标志处，Micro:bit主板上的LED点阵显示“❤”图案；手指松开Micro:bit主板上“Logo”标志处，会出现数字。
 
-5. 代码说明:
+#### 5. 代码说明:
 
-![图片不存在](./media/460d31b183f1fe1f2829ce6f441f2a75.png)
+![Img](./media/110.png)
 
 被触摸或被按下或被松开或被长按microbit主板上的logo标志。
 
-![图片不存在](./media/42cff2da791bc74cb40156f463bc7264.png)
+![Img](./media/111.png)
 
 将运行时间赋给于变量start，单位为毫秒。
 
-![图片不存在](./media/8b837b96da64acee3e30f4f4e2902d34.png)
+![Img](./media/112.png)
 
 将running time－变量start的值赋给于变量time，LED点阵屏显示变量time除于1000的整数。
 
 ---
 
-项目11 麦克风
+### 项目11 麦克风
 
-![图片不存在](./media/83c20ad29baf62c2ee57aa9484bf25b6.png)
+![Img](./media/53.png)
 
-![图片不存在](./media/aa5f2e001bebd174e60b349528d84903.png)
+![Img](./media/54.png)
 
-1. 实验说明：
+#### 1. 实验说明：
 
 Micro:bit主板有一个内置麦克风，可以测量环境的声音程度。你可以使用它作为一个简单的输入---当你鼓掌时，Micro:bit主板上前面内置麦克风LED指示灯会被打开。它还可以测量声音的强度，所以你可以制作一个噪音等级表或与音乐合拍的迪斯科灯光。麦克风是在Micro:bit 主板的背面，而在前面，你会发现一个内置麦克风LED指示灯，还有紧挨着让声音进入麦克风的孔。当你Micro:bit主板在测量声音级别时，它就会亮起来。
 
-2. 准备：
+#### 2. 准备：
 
 （1）通过Micro USB线连接Micro:bit主板和电脑。
 
-![图片不存在](./media/1e429eba679d0adf7294cc4c77e08d75.png)
+![Img](./media/4.png)
 
 （2）打开离线版本或Web版本的MakeCode。 
 
-![图片不存在](./media/6a26b93986e4f555685828e2e9f00bb4.png)
+![Img](./media/5.png)
 
 如果是选择通过导入 **.Hex** 文件来加载项目，请单击“导入”。(方法请参照链接：[http://makecode-ide.readthedocs.io/](http://makecode-ide.readthedocs.io/)) 
 
-![图片不存在](./media/2e72d106eef8a2ce90e871ced3fe9b78.png)
+![Img](./media/6.png)
 
 如果要一一拖动代码块，请单击“**新建项目**”。
 
-![图片不存在](./media/c25f3511fbe9aa08c5e89f90a98dbaaf.png)
+![Img](./media/7.png)
 
-3. 实验程序：                                                                                  
+#### 3. 实验程序：                                                                                  
 
-![图片不存在](./media/c6b226c0cde58519281119c5e1f48f46.png)
+![Img](./media/55.png)
 
-4. 实验结果：
+#### 4. 实验结果：
 
 按照之前的方式将实验程序下载到Micro:bit主板，利用Micro USB数据线上电。
 当你鼓掌时，Micro:bit 主板上的LED点阵显示显示了声音强度值，声音越大，LED点阵点亮的LED灯越多。
 
-5. 代码说明:
+#### 5. 代码说明:
 
-![图片不存在](./media/6baf7f84dbc1c3699312d9948627f69e.png)
+![Img](./media/113.png)
 
 按键A被按下。
 
-![图片不存在](./media/f28a87964e1c5c9a1b30cb17ce584dd8.png)
+![Img](./media/114.png)
 
 将声音级别值赋给于变量soundLevel。
 
 ---
 
-项目12 Microbit 蓝牙无线通信
+### 项目12 Microbit 蓝牙无线通信
 
-![图片不存在](./media/6806de697893af6821e037dd3e50eeef.png)
+![Img](./media/56.png)
 
-1. 实验说明：
+#### 1. 实验说明：
 
 Micro:bit主板了处理器内置蓝牙5.1低功耗的BLE(蓝牙 Low Energy)设备）以及2.4GHz天线，可进行蓝牙无线通信和2.4GHz无线通信。使得Micro:bit主板可以与各种蓝牙设备进行通信，包括智能手机和平板电脑。
 
 在本实验中，主要讲解新款的Micro:bit主板实现蓝牙无线通信功能，我们可以通过连接蓝牙，实现无线传输代码（信号）功能。我们利用一个苹果系统设备（手机/iPad）和Micro:bit 主板连接，实现无线传输功能。设置安卓系统手机实现无线传输方法和苹果系统设备（手机/iPad）类似，这里就不一一介绍了。
 
-2. 准备：
+#### 2. 准备：
 
 （1）通过Micro USB线连接Micro:bit主板和电脑。
 
-![图片不存在](./media/1e429eba679d0adf7294cc4c77e08d75.png)
+![Img](./media/4.png)
 
 （2）苹果系统设备（手机/iPad）或安卓系统手机。
 
-3. 实验步骤：
+#### 3. 实验步骤：
 
 App下载链接：[https://microbit.org/get-started/user-guide/mobile/](https://microbit.org/get-started/user-guide/mobile/) （安卓系统下载参考链接，需要翻墙下载）
 
@@ -805,153 +805,153 @@ App下载链接：[https://microbit.org/get-started/user-guide/mobile/](https://
 
 （1）如果你的智能手机/iPad是苹果系统的，需要先在电脑上进入网页：[https://www.microbit.org/get-started/user-guide/ble-ios/](https://www.microbit.org/get-started/user-guide/ble-ios/) ，往下翻点击“<span style="color: rgb(0, 209, 0);">**Download pairing HEX file**</span>”下载micro:bit的固件到创建的文件夹中或电脑桌面上，并将下载好的Micro:bit固件烧入Micro:bit主板中。（<span style="color: rgb(255, 76, 65);">这一步只针对于苹果系统的智能手机/iPad，安卓系统智能手机/不需要这一步</span>）
 
-![图片不存在](./media/42d9c0f29061f13087b231ebd3f6843a.png)
+![Img](./media/57.png)
 
-![图片不存在](./media/fff507d4afa87842d9e98f70c0e50ef0.png)
+![Img](./media/58.png)
 
-（2）在苹果系统设备（手机/iPad）上打开![图片不存在](./media/904372db3737523189ff8ce4b6a89dd9.png)，在App Store的搜索框中输入“micro bit”，然后选中micro:bit 选项，会出现下载界面（如下图所示：），点击“![图片不存在](./media/a9c7179df093d9f6eb1d39906cc2b90d.png)”，就可以下载安装对应的APP。
+（2）在苹果系统设备（手机/iPad）上打开![Img](./media/59.png)，在App Store的搜索框中输入“micro bit”，然后选中micro:bit 选项，会出现下载界面（如下图所示：），点击“![Img](./media/60.png)”，就可以下载安装对应的APP。
 
-![图片不存在](./media/d1ad3a8905366d883ea6a30752866924.png)
+![Img](./media/61.png)
 
 （3）苹果系统设备（手机/iPad）和Micro:bit主板配对连接。
 
 a.APP安装成功后，打开苹果系统设备（手机/iPad）上的蓝牙。
 
-![图片不存在](./media/af7c7c91afadedabe9d372ab52edb380.png)
+![Img](./media/62.png)
 
-b.点击![图片不存在](./media/e81ca01be5af70cff66813ef51b69b90.png)打开APP，先确定Micro USB数据线已经将Micro:bit主板和电脑连接上，再点击APP的第一项“**Choose micro:bit**”，开始配对蓝牙。
+b.点击![Img](./media/63.png)打开APP，先确定Micro USB数据线已经将Micro:bit主板和电脑连接上，再点击APP的第一项“**Choose micro:bit**”，开始配对蓝牙。
 
-![图片不存在](./media/1ba30e27f5b5cbb099ffd7d49b7b3469.png)
+![Img](./media/64.png)
 
 c.点击“**Pair a new micro:bit**”，开始配对。
 
-![图片不存在](./media/d08d496d5fe9a5201002df79b03cfc14.png)
+![Img](./media/65.png)
 
 d.根据提示，首先同时按住micro:bit主板上的按键A和B，然后按下micro:bit主板后面的复位&电源按钮几秒钟（按键A和B不能松开），再松开复位&电源按钮，micro:bit主板上LED点阵会显示一个密码图案。最后松开micro:bit主板上的按键A和B，接着点击“**Next**”。
 
-![图片不存在](./media/082aa62805725e81d73900481c1d60c5.png)
+![Img](./media/66.png)
 
-![图片不存在](./media/25fefe3d6b631a81a6472cd979b84521.png)
+![Img](./media/67.png)
 
 e.在苹果系统手机/iPad上设置密码图案，使图案和micro:bit主板上显示的密码图案一样，点击“**Next**”。
 
-![图片不存在](./media/2307e6a1e3dbef0a4ac0ede8930d1749.png)
+![Img](./media/68.png)
 
 f.点击“**Next**”，出现对话框，在对话框中点击“**Pair**”。几秒钟后，配对成功，同时Micro:bit主板上的LED点阵显示“√”图案。
 
-![图片不存在](./media/9ac7abe5a5b1609fedd0b11e5e8d587d.png)
+![Img](./media/69.png)
 
-![图片不存在](./media/d817c83534b2d4e4a18ca37453bc7f6e.png)
+![Img](./media/70.png)
 
-![图片不存在](./media/6c18486e36685fad6596334410ce40af.png)
+![Img](./media/71.png)
 
-![图片不存在](./media/0f9bf7514a01e3a8b36fc6e3b4a3f075.png)
+![Img](./media/72.png)
 
 （4）蓝牙配对成功后，开始利用APP编写代码，并上传代码。
 
 a.点击第二项“Create Code”，进入编程界面，开始编写代码程序。
 
-![图片不存在](./media/335189d0e25955e8bd8859e78eee94ff.png)
+![Img](./media/73.png)
 
-![图片不存在](./media/1c853d5586f3dece1da54c511523a111.png)
+![Img](./media/74.png)
 
-![图片不存在](./media/5ef2d1adfc559d1546a94142094c1496.png)
+![Img](./media/75.png)
 
-![图片不存在](./media/a85d01e948cc5e19e249f95de6e2aba6.png)
+![Img](./media/76.png)
 
-b. 将代码程序项目名称设置为“1”，点击保存图案“![图片不存在](./media/85c9b25134a0eaacc1535f51417e1e91.png)”，保存代码程序。
+b. 将代码程序项目名称设置为“1”，点击保存图案“![Img](./media/77.png)”，保存代码程序。
 
-![图片不存在](./media/929759d91d5310f8f060a6983d315024.png)
+![Img](./media/78.png)
 
 c.项目代码程序保存成功后，点击第三项“**Flash**”进入上传代码程序界面。默认选择代码程序是刚刚保存的项目名称为“**1**”的代码程序，然后点击“**Flash**”上传代码程序“**1**”。
 
-![图片不存在](./media/f447e88d85909191e725bf167cbada24.png)
+![Img](./media/79.png)
 
-![图片不存在](./media/b66e03a0aa90c3fc4b7ff10385560a04.png)
+![Img](./media/80.png)
 
-![图片不存在](./media/3872186e3337b7f4cd5d07fe9961bf24.png)
+![Img](./media/81.png)
 
 d.几秒钟后，代码程序“**1**”上传成功，会显示如下图。然后micro:bit主板上的LED点阵显示跳跃的“**心**”对应图案。
 
-![图片不存在](./media/e5e5fc91d42ac0caee16ed4d974aa823.png)
+![Img](./media/82.png)
 
 ---
 
-项目13 Hello World
+### 项目13 Hello World
 
-1. 项目介绍：
+#### 1. 项目介绍：
 
 对于Micro:bit初学者，我们将从一些简单的东西开始。在这个项目中，您只需要一个Micro:bit主板，Micro USB线和计算机来完成“Hello World!”项目。它不仅是Micro:bit主板和计算机的通信测试，也是Micro:bit世界的初级项目。
 
-2. 项目元件：
+#### 2. 项目元件：
 
-| ![图片不存在](./media/e0c47bb1cc4a5178b9005dba833f7fd5.png)| ![图片不存在](./media/a6ff46e05db89a18ffe62f2f6c66c701.png) |
+| ![Img](./media/0.png)| ![Img](./media/115.png) |
 | :--: | :--: |
 |Micro:bit主板*1 | MicroUSB线*1 |
 
-3. 项目接线：
+#### 3. 项目接线：
 
-![图片不存在](./media/1e429eba679d0adf7294cc4c77e08d75.png)
+![Img](./media/4.png)
 
-4. 项目代码：
+#### 4. 项目代码：
 
-![图片不存在](./media/0808f5ad4a87b7ef386fd1322880e1e5.png)
+![Img](./media/148.png)
 
-5. 项目现象：
+#### 5. 项目现象：
 
 按照接线图正确接好线，将代码上传至Micro:bit主板。上传成功后，利用MicroUSB线连接到计算机上电，可以看到的现象是：Micro:bit主板上的LED点阵滚动显示“Hello World!”。
 
-![图片不存在](./media/6a26b93986e4f555685828e2e9f00bb4.png)
+![Img](./media/5.png)
 
 ---
 
-项目14 点亮LED
+### 项目14 点亮LED
 
-1. 项目介绍：
+#### 1. 项目介绍：
 
 在这个项目中，我们将向你展示点亮LED。我们是使用Micro:bit主板的数字引脚来打开LED，使LED被点亮。
 
-2. 项目元件：
+#### 2. 项目元件：
 
-|![图片不存在](./media/e0c47bb1cc4a5178b9005dba833f7fd5.png)|![图片不存在](./media/d442bc0b78f29946e69381e0403d5b7c.png)|![图片不存在](./media/28c28e6163de71f861c1f8f9bf621ee2.png)| ![图片不存在](./media/81a0c58c8464b10d045884226845110c.png)|
+|![Img](./media/0.png)|![Img](./media/116.png)|![Img](./media/117.png)| ![Img](./media/177.png)|
 | :--: | :--: | :--: | :--: |
 |Micro:bit主板*1|面包板*1|红色LED*1|Micro:bit扩展板*1|
-|![图片不存在](./media/11f324f82f890b0691f134e1ea7a3765.png)| ![图片不存在](./media/8d920d12138bd3b4e62f02cecc2c63a3.png)|![图片不存在](./media/a6ff46e05db89a18ffe62f2f6c66c701.png)| |
+|![Img](./media/118.png)| ![Img](./media/119.png)|![Img](./media/115.png)| |
 |220Ω电阻*1|面包板连接线*2|MicroUSB线*1| |
 
-3. 元件知识：
+#### 3. 元件知识：
 
 **（1）LED**
 
-![图片不存在](./media/28c28e6163de71f861c1f8f9bf621ee2.png)
+![Img](./media/117.png)
 
 LED是一种被称为“发光二极管”的半导体，是一种由半导体材料(硅、硒、锗等)制成的电子器件。它有正极和负极。短腿为负极，接GND，长腿为正极，接3.3V或5V。
 
-![图片不存在](./media/cbb16ef4d8cb62a4001d1a05ae3ac615.png)
+![Img](./media/120.png)
 
 **（2）五色环电阻**
 
 电阻是电路中限制或调节电流流动的电子元件。左边是电阻器的外观，右边是电阻在电路中表示的符号。电阻(R)的单位为欧姆(Ω)，1 mΩ= 1000 kΩ，1kΩ= 1000Ω。
 
-![图片不存在](./media/11d4977d31c6f63993b5f3ac97b4cfb7.png)
+![Img](./media/abcdefg.png)
 
 我们可以使用电阻来保护敏感组件，如LED。电阻的强度（以Ω为单位）用小色环标记在电阻器的主体上。每种颜色代表一个数字，你可以用电阻对照卡查找。
 
-![图片不存在](./media/e60472f717ced1cc0bd94f4972ef0cd0.png)
+![Img](./media/121.png)
 
 在这个套件中，我们提供了2个具有不同电阻值的五色环电阻。这里以2个五色环电阻为例：
 
 220Ω电阻×10
 
-![图片不存在](./media/951ce7d7778b34bf8fbdb3de1b8c3116.png)
+![Img](./media/122.png)
 
 1KΩ电阻×10
 
-![图片不存在](./media/931d1535563f6d817300f97c0946a01c.png)
+![Img](./media/123.png)
 
 在相同的电压下，会有更小的电流和更大的电阻。电流、电压、电阻之间的联系可以用公式表示：I=U/R。在下图中，目前通过R1的电流: I = U / R = 3 V / 10 KΩ= 0.0003A= 0.3mA。
 
-![图片不存在](./media/8556c6c4feade95fb231c98da873b43c.png)
+![Img](./media/124.png)
 
 不要把电阻值很低的电阻直接连接在电源两极，这样会使电流过高而损坏电子元件。电阻是没有正负极之分。
 
@@ -959,22 +959,22 @@ LED是一种被称为“发光二极管”的半导体，是一种由半导体�
 
 面包板是实验室中用于搭接电路的重要工具。面包板上有许多孔，可以插入集成电路和电阻等电路元件。熟练掌握面包板的使用方法是提高实验效率，减少实验故障出现几率的重要基础之一。下面就面包板的结构和使用方法做简单介绍。一个典型的面包板如下所示：
 
-![图片不存在](./media/2cfd6bc0dc00ad7d5958cd17d3356cba.png)
+![Img](./media/125.png)
 
 面包板的外观和内部结构如上图所示，常见的最小单元面包板分上、中、下三部分，上面和下面部分一般是由一行或两行的插孔构成的窄条，中间部分是由中间一条隔离凹槽和上下各5 行的插孔构成的条。
 
-![图片不存在](./media/75c86239f58978a336a389a174443924.png)
+![Img](./media/126.png)
 
 在面包板的两个窄条分别有两行插孔，两行之间是不连通的，一般是作为电源引入的通路。上方第一行标有“+”的一行有10组插孔（内部都是连通），均为正极；上方第二行标有“-”的一行有10组插孔，（内部都是连通），均为接地。面包板下方的第一行与第二行结构同上。如需用到整个面包板，通常将“+”与“+”用导线连接起来，“-”与“-”用导线连接起来。0
 中间部分宽条是由中间一条隔离凹槽和上下各5 行的插孔构成。在同一列中的5 个插孔是互相连通的，列和列之间以及凹槽上下部分则是不连通的。外观及结构如下图：
 
-![图片不存在](./media/3f03942b842afb3b2c7407c8f712d6cd.png)
+![Img](./media/127.png)
 
 中间部分宽条的连接孔分为上下两部分，是面包板的主工作区，用来插接原件和面包板连接线。在同一列中的5个插孔（即a-b-c-d-e，f-g-h-i-j）是互相连通的；列和列之间以及凹槽上下部分是不连通的。在做实验的时候，通常是使用两窄一宽组成的小单元，在宽条部分搭接电路的主体部分，上面的窄条取一行做电源，下面的窄条取一行做接地。中间宽条用于连接电路，由于凹槽上下是不连通的，所以集成块一般跨插在凹槽上。
 
 **(4) Micro:bit扩展板**
 
-![图片不存在](./media/81a0c58c8464b10d045884226845110c.png)
+![Img](./media/177.png)
 
 为了方便Micro:bit 开发板接线，特别设计了这款扩展板。扩展板自带AMS1117芯片，可以外接DC 4.75-12V 给Micro:bit扩展板供电。Micro:bit开发板全部引脚和电源均已引出到扩展板中间排母，我们可以直接在扩展板上焊接元件，也可以通过400孔面包板连接电路。面包板与扩展板之间通过双面胶连接，售出时面包板与扩展板是分离的。扩展区域使用双面PCB过孔连接，正反两面都可焊接元件背面IO有贴片焊盘，方面飞线连接；下面部分放置400孔面包板，方便实验扩展。
 
@@ -987,132 +987,132 @@ LED是一种被称为“发光二极管”的半导体，是一种由半导体�
 
 Micro:bit主板需要3.3V电源，在本项目中，我们通过用MicroUSB线将Micro:bit主板和电脑连起来。
 
-![图片不存在](./media/1e429eba679d0adf7294cc4c77e08d75.png)
+![Img](./media/4.png)
 
-4. 项目接线图：
+#### 4. 项目接线图：
 
-![图片不存在](./media/297ecba18bc48384e662a6caf4087a21.png)
+![Img](./media/159.png)
 
-5. 项目代码：
+#### 5. 项目代码：
 
-![图片不存在](./media/cf67355d67843d49b6fc1acc10872fc3.png)
+![Img](./media/149.png)
 
-6. 项目现象：
+#### 6. 项目现象：
 
 按照接线图正确接好各元器件，将代码上传至Micro:bit主板。上传成功后，利用MicroUSB线连接到计算机上电，可以看到的现象是：LED被点亮。
 
-![图片不存在](./media/96672306fbbac2d8b33a55315d0d8fc5.png)
+![Img](./media/128.png)
 
-7. 代码说明:
+#### 7. 代码说明:
 
-![图片不存在](./media/7161b53b1232b4512f04e94752d0c3ed.png)  
+![Img](./media/144.png)  
 
 向指定引脚设置“1”或“0”，选择“1”代表给该引脚设置高电平，有电压，有电流，则LED点亮；选择“0”代表给引脚设置低电平，没电压，没有电流，则LED不亮。 
 
 ---
 
-项目15 LED闪烁
+### 项目15 LED闪烁
 
-1. 项目介绍：
+#### 1. 项目介绍：
 
 在这个项目中，我们将向你展示LED闪烁效果。我们是使用Micro:bit主板的数字引脚来打开LED，让它闪烁。
 
-2. 项目元件：
+#### 2. 项目元件：
 
-|![图片不存在](./media/e0c47bb1cc4a5178b9005dba833f7fd5.png)|![图片不存在](./media/d442bc0b78f29946e69381e0403d5b7c.png)|![图片不存在](./media/28c28e6163de71f861c1f8f9bf621ee2.png)| ![图片不存在](./media/81a0c58c8464b10d045884226845110c.png)|
+|![Img](./media/0.png)|![Img](./media/116.png)|![Img](./media/117.png)| ![Img](./media/177.png)|
 | :--: | :--: | :--: | :--: |
 |Micro:bit主板*1|面包板*1|红色LED*1|Micro:bit扩展板*1|
-|![图片不存在](./media/11f324f82f890b0691f134e1ea7a3765.png)| ![图片不存在](./media/8d920d12138bd3b4e62f02cecc2c63a3.png)|![图片不存在](./media/a6ff46e05db89a18ffe62f2f6c66c701.png)| |
+|![Img](./media/118.png)| ![Img](./media/119.png)|![Img](./media/115.png)| |
 |220Ω电阻*1|面包板连接线*2|MicroUSB线*1| |
 
-3. 项目接线图：
+#### 3. 项目接线图：
 
-![图片不存在](./media/297ecba18bc48384e662a6caf4087a21.png)
+![Img](./media/159.png)
 
-4. 项目代码：
+#### 4. 项目代码：
 
-![图片不存在](./media/c3c8b1118674d3a302b1356c9eae6cab.png)
+![Img](./media/150.png)
 
-5. 项目现象：
+#### 5. 项目现象：
 
 按照接线图正确接好各元器件，将代码上传至Micro:bit主板。上传成功后，利用MicroUSB线连接到计算机上电，可以看到的现象是：电路中的LED会反复闪烁。
 
-![图片不存在](./media/bbd161f32b47a175d78773391bd7b0c1.png)
+![Img](./media/129.png)
 
-6. 代码说明:
+#### 6. 代码说明:
 
-![图片不存在](./media/7161b53b1232b4512f04e94752d0c3ed.png)  
+![Img](./media/144.png)  
 
 向指定引脚设置“1”或“0”，选择“1”代表给该引脚设置高电平，有电压，有电流，则LED点亮；选择“0”代表给引脚设置低电平，没电压，没有电流，则LED不亮。 
 
-![图片不存在](./media/3b47ec444524a1b614542de46b693502.png)
+![Img](./media/90.png)
 
 延时，单位为毫秒。
 
 ---
 
-项目16 交通灯
+### 项目16 交通灯
 
-1. 项目介绍：
+#### 1. 项目介绍：
 
 交通灯在我们的日常生活中很普遍。根据一定的时间规律，交通灯是由红、黄、绿三种颜色组成的。每个人都应该遵守交通规则，这可以避免许多交通事故。在这个项目中，我们将使用Micro:bit主板和一些led(红，黄，绿)来模拟交通灯。
 
-2. 项目元件：
+#### 2. 项目元件：
 
-|![图片不存在](./media/e0c47bb1cc4a5178b9005dba833f7fd5.png)|![图片不存在](./media/d442bc0b78f29946e69381e0403d5b7c.png)| ![图片不存在](./media/81a0c58c8464b10d045884226845110c.png)|
+|![Img](./media/0.png)|![Img](./media/116.png)| ![Img](./media/177.png)|
 | :--: | :--: | :--: |
 |Micro:bit主板*1|面包板*1|Micro:bit扩展板*1|
-|![图片不存在](./media/28c28e6163de71f861c1f8f9bf621ee2.png)|![图片不存在](./media/538628fed136c06e104ae01b69774d34.png)|![图片不存在](./media/cede9aadb081f8efbe1aa2884452296f.png)|
+|![Img](./media/117.png)|![Img](./media/130.png)|![Img](./media/131.png)|
 |红色LED*1|黄色LED*1|绿色LED*1|
-|![图片不存在](./media/11f324f82f890b0691f134e1ea7a3765.png)| ![图片不存在](./media/8d920d12138bd3b4e62f02cecc2c63a3.png)|![图片不存在](./media/a6ff46e05db89a18ffe62f2f6c66c701.png)|
+|![Img](./media/118.png)| ![Img](./media/119.png)|![Img](./media/115.png)|
 |220Ω电阻*3|面包板连接线若干|MicroUSB线*1|
 
-3. 项目接线图： 
+#### 3. 项目接线图： 
 
-![图片不存在](./media/64958f19d2ba55231ea1ca894a8583cc.png)
+![Img](./media/160.png)
 
-4. 项目代码：
+#### 4. 项目代码：
 
-![图片不存在](./media/2fd3dd51ce22d16a3e884f24e6ac617c.png)
+![Img](./media/151.png)
 
-5. 项目现象：
+#### 5. 项目现象：
 
 按照接线图正确接好各元器件，将代码上传至Micro:bit主板。上传成功后，利用MicroUSB线连接到计算机上电，可以看到的现象是：1.首先，绿灯会亮5秒，然后熄灭；2.其次，黄灯会闪烁3次，然后熄灭；3.然后，红灯会亮5秒，然后熄灭；4.继续运行上述1-3个步骤。
 
-![图片不存在](./media/f579ecc5e630e94ca950a3be80bcf66e.jpg)
+![Img](./media/ABC21.jpg)
 
 
-6. 代码说明:
+#### 6. 代码说明:
 
-![图片不存在](./media/5a6ff3eae01a049e5313a59ae7ecb6de.png)
+![Img](./media/167.png)
 
 有条件的循环控制语句，当满足循环次数时就退出循环，比如：4表示循环执行4次，数字4是可以改成其他数字的。
 
 ---
 
-项目17 呼吸灯
+### 项目17 呼吸灯
 
-1. 项目介绍：
+#### 1. 项目介绍：
 
 在之前的研究中，我们知道LED有亮/灭状态，那么如何进入中间状态呢?如何输出一个中间状态让LED“半亮”?这就是我们将要学习的。呼吸灯，即LED由灭到亮，再由亮到灭，就像“呼吸”一样。那么，如何控制LED的亮度呢? 我们将使用Micro:bit主板的PWM来实现这个目标。
 
-2. 项目元件：
+#### 2. 项目元件：
 
-|![图片不存在](./media/e0c47bb1cc4a5178b9005dba833f7fd5.png)|![图片不存在](./media/d442bc0b78f29946e69381e0403d5b7c.png)|![图片不存在](./media/28c28e6163de71f861c1f8f9bf621ee2.png)| ![图片不存在](./media/81a0c58c8464b10d045884226845110c.png)|
+|![Img](./media/0.png)|![Img](./media/116.png)|![Img](./media/117.png)| ![Img](./media/177.png)|
 | :--: | :--: | :--: | :--: |
 |Micro:bit主板*1|面包板*1|红色LED*1|Micro:bit扩展板*1|
-|![图片不存在](./media/11f324f82f890b0691f134e1ea7a3765.png)| ![图片不存在](./media/8d920d12138bd3b4e62f02cecc2c63a3.png)|![图片不存在](./media/a6ff46e05db89a18ffe62f2f6c66c701.png)| |
+|![Img](./media/118.png)| ![Img](./media/119.png)|![Img](./media/115.png)| |
 |220Ω电阻*1|面包板连接线*2|MicroUSB线*1| |
 
-3. 元件知识：
+#### 3. 元件知识：
 
-![图片不存在](./media/e739a6e4a95fa8bbbefb26ef955dc465.png)
+![Img](./media/132.png)
 
 **模拟信号 & 数字信号** 
 
 模拟信号在时间和数值上都是连续的信号。相反，数字信号或离散时间信号是由一系列数字组成的时间序列。生活中的大多数信号都是模拟信号，一个熟悉的模拟信号的例子是：全天的温度是连续不断变化的，而不是突然从0到10的瞬间变化。然而，数字信号的值可以瞬间改变。这个变化用数字表示为1和0(二进制代码的基础)。如下图所示，我们可以更容易地看出它们的差异。
 
-![图片不存在](./media/550c1d587189ce5ac3678f44b08ac888.png)
+![Img](./media/133.png)
 
 在实际应用中，我们经常使用二进制作为数字信号，即一系列的0和1。由于二进制信号只有两个值(0或1)，因此具有很大的稳定性和可靠性。最后，可以将模拟信号和数字信号相互转换。
 
@@ -1120,101 +1120,101 @@ Micro:bit主板需要3.3V电源，在本项目中，我们通过用MicroUSB线�
 
 脉宽调制(PWM)是一种利用数字信号控制模拟电路的有效方法。普通处理器不能直接输出模拟信号。PWM技术使这种转换(将数字信号转换为模拟信号)非常方便。PWM技术利用数字引脚发送一定频率的方波，即高电平和低电平的输出，交替持续一段时间。每一组高电平和低电平的总时间一般是固定的，称为周期(注:周期的倒数是频率)。高电平输出的时间通常称为脉宽，占空比是脉宽(PW)与波形总周期(T)之比的百分比。高电平输出持续时间越长，占空比越长，模拟信号中相应的电压也就越高。下图显示了对应于脉冲宽度0%-100%的模拟信号电压在0V-3.3V(高电平为3.3V)之间的变化情况.
 
-![图片不存在](./media/0c29da4ca7a2fee2f5a0078eacc9e88a.png)
+![Img](./media/134.png)
 
 PWM占空比越长，输出功率越高。既然我们了解了这种关系，我们就可以用PWM来控制LED的亮度或直流电机的速度等等。从上面可以看出，PWM并不是真实的模拟信号，电压的有效值等于相应的模拟信号。因此，我们可以控制LED和其他输出模块的输出功率，以达到不同的效果。
 
-4. 项目接线图： 
+#### 4. 项目接线图： 
 
-![图片不存在](./media/297ecba18bc48384e662a6caf4087a21.png)
+![Img](./media/159.png)
 
-5. 项目代码：
+#### 5. 项目代码：
 
-![图片不存在](./media/f25c1ea46c92d96eaefd655be8473d73.png)
+![Img](./media/152.png)
 
-6. 项目现象：
+#### 6. 项目现象：
 
 按照接线图正确接好各元器件，将代码上传至Micro:bit主板。上传成功后，利用MicroUSB线连接到计算机上电，可以看到的现象是：电路中的LED从暗逐渐变亮，再从亮逐渐变暗，就像呼吸一样。
 
-![图片不存在](./media/7a0d2717b48056cbef36f880212d8e07.png)
+![Img](./media/135.png)
 
-7. 代码说明:
+#### 7. 代码说明:
 
-![图片不存在](./media/133d65ccea05fc33aa02013e37869f6e.png)
+![Img](./media/168.png)
 
 创建并设置变量“<span style="color: rgb(255, 76, 65);">brightness</span>”初始值为0。
 
-![图片不存在](./media/1ad67a5a08497d3a20f6fca1679f6ff6.png) 
+![Img](./media/169.png) 
 
 获取变量brightness。
 
-![图片不存在](./media/bc52d1abc435c0858ccf7032ee0a733a.png)
+![Img](./media/170.png)
 
 设置变量brightness每次以10毫秒频率加1，然后设置P1的模拟值为brightness。 
 
-![图片不存在](./media/05edc8eb6d726f1e3bd7e177b6081ed5.png)
+![Img](./media/171.png)
 
 当满足false里语句，则运行“执行”处命令。
 
-![图片不存在](./media/8a249bf8f03895b22a4b51f4963b7f96.png)
+![Img](./media/172.png)
 
 设置变量brightness每次以10毫秒频率减1，然后设置P1的模拟值为brightness。 
 
 ---
 
-项目18 流水灯
+### 项目18 流水灯
 
-1. 项目介绍：
+#### 1. 项目介绍：
 
 在日常生活中，我们可以看到许多由不同颜色的led组成的广告牌。他们不断地改变灯光(像流水一样)来吸引顾客的注意。在这个项目中，我们将使用Micro:bit主板控制3个LED灯实现流水的效果。
 
-2. 项目元件：
+#### 2. 项目元件：
 
-|![图片不存在](./media/e0c47bb1cc4a5178b9005dba833f7fd5.png)|![图片不存在](./media/d442bc0b78f29946e69381e0403d5b7c.png)|![图片不存在](./media/28c28e6163de71f861c1f8f9bf621ee2.png)| ![图片不存在](./media/81a0c58c8464b10d045884226845110c.png)|
+|![Img](./media/0.png)|![Img](./media/116.png)|![Img](./media/117.png)| ![Img](./media/177.png)|
 | :--: | :--: | :--: | :--: |
 |Micro:bit主板*1|面包板*1|红色LED*3|Micro:bit扩展板*1|
-|![图片不存在](./media/11f324f82f890b0691f134e1ea7a3765.png)| ![图片不存在](./media/8d920d12138bd3b4e62f02cecc2c63a3.png)|![图片不存在](./media/a6ff46e05db89a18ffe62f2f6c66c701.png)| |
+|![Img](./media/118.png)| ![Img](./media/119.png)|![Img](./media/115.png)| |
 |220Ω电阻*3|面包板连接线若干|MicroUSB线*1| |
 
-3. 项目接线图:
+#### 3. 项目接线图:
 
-![图片不存在](./media/8e6b250dc555ed81a55b34c699cc574e.png)
+![Img](./media/161.png)
 
-4. 项目代码：
+#### 4. 项目代码：
 
-![图片不存在](./media/f080cf9fe44427b95642ef56294cf84f.png)
+![Img](./media/153.png)
 
-5. 项目现象：
+#### 5. 项目现象：
 
 按照接线图正确接好各元器件，将代码上传至Micro:bit主板。上传成功后，利用MicroUSB线连接到计算机上电，可以看到的现象是：电路中的3个LED会逐渐亮起来，然后逐渐熄灭，就像电池充电一样。
 
-![图片不存在](./media/10888cdfc54814149dd8a0e0f0fd6320.jpg)
+![Img](./media/ABC20.jpg)
 
-6. 代码说明:
+#### 6. 代码说明:
 
 可以参照项目03的代码说明，这里就不多做介绍了。
 
 ---
 
-项目19 有源蜂鸣器
+### 项目19 有源蜂鸣器
 
-1. 项目介绍：
+#### 1. 项目介绍：
 
 有源蜂鸣器模块上有一个发声元件----有源蜂鸣器。它被广泛用作电脑、打印机、报警器、电子玩具、电话、计时器等的发声元件。它有一个内在的振动源，需连接3.3V~5V电源，即可持续发出嗡嗡声。在这个项目中，我们将使用Micro:bit主板控制有源蜂鸣器发出“滴滴”声。
 
-2. 项目元件：
+#### 2. 项目元件：
 
-|![图片不存在](./media/e0c47bb1cc4a5178b9005dba833f7fd5.png)|![图片不存在](./media/81a0c58c8464b10d045884226845110c.png)|![图片不存在](./media/08cac8e036b616593db2d11a13d7922d.png)|
+|![Img](./media/0.png)|![Img](./media/177.png)|![Img](./media/136.png)|
 | :--: | :--: | :--: | 
 |Micro:bit主板*1|Micro:bit扩展板*1| 有源蜂鸣器模块*1|
-|![图片不存在](./media/dda94299cc2abaff2c9cb8ff7ce365ff.jpg)|![图片不存在](./media/a6ff46e05db89a18ffe62f2f6c66c701.png)|  |
+|![Img](./media/137.jpg)|![Img](./media/115.png)|  |
 |公对母杜邦线若干|MicroUSB线*1|  |
   
-3. 元件知识：
+#### 3. 元件知识：
 
 <span style="color: rgb(255, 76, 65);">注意：本教程使用的是有源蜂鸣器。</span>
 
-![图片不存在](./media/08cac8e036b616593db2d11a13d7922d.png)
+![Img](./media/136.png)
 
 有源蜂鸣器和无源蜂鸣器的“源”不是指电源，而是指震荡源。
 
@@ -1236,49 +1236,49 @@ PWM占空比越长，输出功率越高。既然我们了解了这种关系，�
 
 **总结：有源蜂鸣器内部带震荡源，发声频率固定。无源内部不带震荡源，通过方波去驱动，发音频率可改变。**
 
-4. 项目接线图：
+#### 4. 项目接线图：
 
-![图片不存在](./media/05c48484bac4b468d16306851b58d0a2.png)
+![Img](./media/162.png)
 
-5. 项目代码：
+#### 5. 项目代码：
 
-![图片不存在](./media/004acac07dd4cad2da7318b8b96a24a9.png)
+![Img](./media/154.png)
 
-6. 项目现象：
+#### 6. 项目现象：
 
 按照接线图正确接好各元器件，将代码上传至Micro:bit主板。上传成功后，利用MicroUSB线连接到计算机上电，可以看到的现象是：有源蜂鸣器发出“滴滴”声。
 
-![图片不存在](./media/957fbf9dababc31766da80000f946d68.jpg)
+![Img](./media/ABC19.jpg)
 
-8. 代码说明:
+#### 8. 代码说明:
 
 可以参照项目03的代码说明，这里就不多做介绍了。
 
 ---
 
-项目20 继电器控制LED
+### 项目20 继电器控制LED
 
-1. 项目介绍：
+#### 1. 项目介绍：
 
 在日常生活中，我们一般使用交流来驱动电气设备，有时我们会用开关来控制电器。如果将开关直接连接到交流电路上，一旦发生漏电，人就有危险。从安全的角度考虑，我们特别设计了这款具有NO(常开)端和NC(常闭)端的继电器模块。在这节课我们将学习一个比较特殊、好用的开关，就是继电器模块，使用继电器模块控制LED灯亮灭。
 
-2. 项目元件：
+#### 2. 项目元件：
 
-|![图片不存在](./media/e0c47bb1cc4a5178b9005dba833f7fd5.png)|![图片不存在](./media/d442bc0b78f29946e69381e0403d5b7c.png)| ![图片不存在](./media/81a0c58c8464b10d045884226845110c.png)|![图片不存在](./media/1677c94f2390adeb3df19bfabd6ced88.png)|
+|![Img](./media/0.png)|![Img](./media/116.png)| ![Img](./media/177.png)|![Img](./media/138.png)|
 | :--: | :--: | :--: | :--: |  
 |Micro:bit主板*1|面包板*1| Micro:bit扩展板*1|继电器模块*1|
-|![图片不存在](./media/a6ff46e05db89a18ffe62f2f6c66c701.png)|![图片不存在](./media/11f324f82f890b0691f134e1ea7a3765.png)| ![图片不存在](./media/8d920d12138bd3b4e62f02cecc2c63a3.png)|![图片不存在](./media/28c28e6163de71f861c1f8f9bf621ee2.png)|
+|![Img](./media/115.png)|![Img](./media/118.png)| ![Img](./media/119.png)|![Img](./media/117.png)|
 |MicroUSB线*1|220Ω电阻*1|面包板连接线若干|红色LED*1|
-|![图片不存在](./media/5a0d069fdb6c0f5901be9f9e2bd07e7d.png)|![图片不存在](./media/dda94299cc2abaff2c9cb8ff7ce365ff.jpg)|![图片不存在](./media/bae3eacd95d794ed928a1d837f2073c6.png)|![图片不存在](./media/dc4d439a9c04b810960e497d95d3da88.png)|
+|![Img](./media/A25.png)|![Img](./media/137.jpg)|![Img](./media/178.png)|![Img](./media/A26.png)|
 |一字螺丝刀*1|公对母杜邦线若干|电源适配器*1|面包板专用电源模块*1|
 
-3. 元件知识：
+#### 3. 元件知识：
 
-![图片不存在](./media/1677c94f2390adeb3df19bfabd6ced88.png)
+![Img](./media/138.png)
 
 **继电器：** 继电器能兼容多种单片机控制板，是用小电流去控制大电流运作的一种“自动开关”。它可以让单片机控制板驱动3A以下负载，如LED灯带、直流马达、微型水泵、电磁阀可插拔式接口设计，方便使用。继电器有3个接线柱用于外接电路，分别为NO、COM和NC端（背后丝印）。
 
-![图片不存在](./media/66a8a3f7f871c513156c68de0153722a.png)
+![Img](./media/139.png)
 
 **模块参数:**
 
@@ -1300,7 +1300,7 @@ PWM占空比越长，输出功率越高。既然我们了解了这种关系，�
 
 **模块原理图:**
 
-![图片不存在](./media/70636a25eed32cf351f7855180697f6e.png)
+![Img](./media/140.png)
 
 一个继电器拥有一个动触点以及两个静触点A和B。
 
@@ -1312,11 +1312,11 @@ PWM占空比越长，输出功率越高。既然我们了解了这种关系，�
 
 继电器简单来说就是一个开关，VCC表示电源正极、GND表示电源负极、IN表示信号输入脚，COM表示公共端，NC（normal close）表示常闭端，NO(normal open)表示常开端。
 
-![图片不存在](./media/cf1d69e712f4408b762672579c12d57c.png)
+![Img](./media/141.png)
 
 **面包板专用电源模块**
 
-![图片不存在](./media/dc4d439a9c04b810960e497d95d3da88.png)
+![Img](./media/A26.png)
 
 **说明：**
 
@@ -1338,53 +1338,53 @@ PWM占空比越长，输出功率越高。既然我们了解了这种关系，�
 
 板载两组直流输出插针，方便外部引出使用
 
-4. 外接电源供电：
+#### 4. 外接电源供电：
 
 <span style="color: rgb(255, 76, 65);">**特别注意：**</span> 使用家庭用电。
 
-![图片不存在](./media/5d4c2de0674d085a69587a89579371f9.png)
+![Img](./media/179.png)
 
-5. 项目接线图：
+#### 5. 项目接线图：
 
 <br>
 <span style="color: rgb(61, 167, 66);">**特别注意：** 接线前，需要用一字螺丝刀将继电器模块的NO端口和COM端口处的螺丝扭松，将面包板连接线的一端插入NO端口和COM端口处；接好线后，再用一字螺丝刀将NO端口和COM端口处的螺丝扭紧。</span>
 <br>
 
-![图片不存在](./media/87fef1748917cfd176f7d2e12feac005.png)
+![Img](./media/163.png)
 
-6. 项目代码：
+#### 6. 项目代码：
 
-![图片不存在](./media/674dde3ccb63da3bdca63a82b3d9fd1a.png)
+![Img](./media/155.png)
 
-7. 项目现象：
+#### 7. 项目现象：
 
 按照接线图正确接好各元器件，将代码上传至Micro:bit主板。上传成功后，外接电源供电，可以看到的现象是：继电器将循环开与关，开启1秒LED点亮1秒，关闭1秒LED熄灭1秒。同时可以听到继电器开与关的声音，还可以看到继电器上的指示灯指示状态的变化。
 
-![图片不存在](./media/38e035d9ca5684402a53d38748968eef.jpg)
+![Img](./media/ABC18.jpg)
 
-8. 代码说明:
+#### 8. 代码说明:
 
 可以参照项目03的代码说明，这里就不多做介绍了。
 
 ---
 
-项目21 人体红外热释传感器
+### 项目21 人体红外热释传感器
 
-1. 项目介绍：
+#### 1. 项目介绍：
 
 在本项目中，通过读取人体红外热释传感器模块上S端高低电平，判断附近是否有人在运动；并且在Micro:bit主板上的LED点阵屏显示测试结果。
 
-2. 项目元件：
+#### 2. 项目元件：
 
-|![图片不存在](./media/e0c47bb1cc4a5178b9005dba833f7fd5.png)|![图片不存在](./media/81a0c58c8464b10d045884226845110c.png)|![图片不存在](./media/da669743d7e2f9e1880430b0ab12ca06.png)|
+|![Img](./media/0.png)|![Img](./media/177.png)|![Img](./media/C1.png)|
 | :--: | :--: | :--: | 
 |Micro:bit主板*1|Micro:bit扩展板*1|人体红外热释传感器*1|
-|![图片不存在](./media/dda94299cc2abaff2c9cb8ff7ce365ff.jpg)|![图片不存在](./media/a6ff46e05db89a18ffe62f2f6c66c701.png)|  |
+|![Img](./media/137.jpg)|![Img](./media/115.png)|  |
 |公对母杜邦线若干|MicroUSB线*1|  |
 
-3. 元件知识：
+#### 3. 元件知识：
 
-![图片不存在](./media/da669743d7e2f9e1880430b0ab12ca06.png)
+![Img](./media/C1.png)
 
 **人体红外热释传感器:** 它主要由一个RE200B-P传感器元件组成。它是一款基于热释电效应的人体热释运动传感器，能检测到人体或动物身上发出的红外线，配合菲涅尔透镜能使传感器探测范围更远更广。
 
@@ -1413,7 +1413,7 @@ PWM占空比越长，输出功率越高。既然我们了解了这种关系，�
 
 **模块原理图:**
 
-![图片不存在](media/d78c512ebf2ec0ae31513a4faa159fa8.jpg)
+![](media/C8.jpg)
 
 这个模块的原理图可能较前面的模块稍复杂，我们一部分一部分来看。先看电压转换部分，作用是将5V输入电压转换为3.3V输入电压。因为我们模块上用到的热释电红外传感器的工作电压是3.3V，不能直接用5V电压供电使用。有了这个电压转换部分，3.3V输入电压和5V输入电压都适用于此热释电红外传感器。
 
@@ -1421,47 +1421,47 @@ PWM占空比越长，输出功率越高。既然我们了解了这种关系，�
 
 当红外热释传感器检测到红外信号时，红外热释传感器的1脚输出高电平，此时模块上的LED熄灭，MOS管Q1不导通，则信号端S检测到被10K上拉电阻R5拉高的高电平。
 
-4. 项目接线图：
+#### 4. 项目接线图：
 
-![图片不存在](./media/b951552d19417680dccf6e52326a5ad3.png)
+![Img](./media/D1.png)
 
-5. 项目代码：
+#### 5. 项目代码：
 
-![图片不存在](./media/6199a49647ece2c20db1dc5b8a37b0c5.png)
+![Img](./media/D2.png)
 
-6. 项目现象：
+#### 6. 项目现象：
 
 按照接线图正确接好各元器件，将代码上传至Micro:bit主板。上传成功后，利用MicroUSB线连接到计算机上电，可以看到的现象是：当传感器检测到附近有人在运动时，Micro:bit主板上的LED点阵屏显示1；没有检测到附近有人在运动时，Micro:bit主板上的LED点阵屏显示0。
 
-![图片不存在](./media/24b05254e0ffa93ad8d0f50886117b99.jpg)
+![Img](./media/ABC17.jpg)
 
-7. 代码说明:
+#### 7. 代码说明:
 
-![图片不存在](./media/3fe15af352293c0b178c5f20b3eae0ae.png)
+![Img](./media/173.png)
 
 人体红外热释传感器读取数字电平信号输出，并在Microbit主板上的LED点阵显示电平信号。
 
 ---
 
-项目22 避障传感器
+### 项目22 避障传感器
 
-1. 项目介绍：
+#### 1. 项目介绍：
 
 在本项目中，通过读取避障传感器模块上S端高低电平，判断是否存在障碍物，并且在Micro:bit主板上的LED点阵屏显示测试结果。
 
-2. 项目元件：
+#### 2. 项目元件：
 
-|![图片不存在](./media/e0c47bb1cc4a5178b9005dba833f7fd5.png)|![图片不存在](./media/81a0c58c8464b10d045884226845110c.png)|![图片不存在](./media/06763561566221a1869025569aa0f947.png)|![图片不存在](./media/dda94299cc2abaff2c9cb8ff7ce365ff.jpg)|
+|![Img](./media/0.png)|![Img](./media/177.png)|![Img](./media/C2.png)|![Img](./media/137.jpg)|
 | :--: | :--: | :--: | :--: | 
 |Micro:bit主板*1|Micro:bit扩展板*1|避障传感器模块*1|公对母杜邦线若干|
-|![图片不存在](./media/a6ff46e05db89a18ffe62f2f6c66c701.png)|![图片不存在](./media/bae3eacd95d794ed928a1d837f2073c6.png)|![图片不存在](./media/dc4d439a9c04b810960e497d95d3da88.png)| ![图片不存在](./media/d442bc0b78f29946e69381e0403d5b7c.png)|
+|![Img](./media/115.png)|![Img](./media/178.png)|![Img](./media/A26.png)| ![Img](./media/116.png)|
 |MicroUSB线*1|电源适配器*1|面包板专用电源模块*1| 面包板*1|
-|![图片不存在](./media/8d920d12138bd3b4e62f02cecc2c63a3.png)|![图片不存在](./media/5a0d069fdb6c0f5901be9f9e2bd07e7d.png)|    |     |
+|![Img](./media/119.png)|![Img](./media/A25.png)|    |     |
 |面包板连接线若干|一字螺丝刀*1 |    |     |
 
-3. 元件知识：
+#### 3. 元件知识：
 
-![图片不存在](./media/06763561566221a1869025569aa0f947.png)
+![Img](./media/C2.png)
 
 **避障传感器:** 它主要由一对红外线发射管与接收管元件组成。当传感器感应到物体时信号端S输出0，未感应到时信号端S输出1。它可通过调节电位器用来调节感应灵敏度，它感应速度快，适合智能小车避障、防跌落，产品计数器，流水线切割，液位检测等。
 
@@ -1489,24 +1489,24 @@ PWM占空比越长，输出功率越高。既然我们了解了这种关系，�
 
 **模块原理图:**
 
-![图片不存在](media/1257edcde11bd0500fe986b376b311f0.jpg)
+![](media/C9.jpg)
 
 NE555时基电路提供给发射管TX发射出一定频率的红外信号，红外信号会随着传送距离的加大逐渐衰减，如果遇到障碍物，就会形成红外反射。当检测方向RX遇到反射回来的信号比较弱时，接收检测引脚输出高电平，说明障碍物比较远；当反射回来的信号比较强，接收检测引脚输出低电平，说明障碍物比较近，此时指示灯亮起。传感器上有两个电位器，一个用于调节发送功率，一个用于调节接收频率，通过调节两个电位器，我们可以调节它的有效距离。
 
 
-4. 项目接线图：
+#### 4. 项目接线图：
 
-![图片不存在](./media/fede9cdbadb25690b94130233edabb44.png)
+![Img](./media/D3.png)
 
-5. 项目代码：
+#### 5. 项目代码：
 
-![图片不存在](./media/6199a49647ece2c20db1dc5b8a37b0c5.png)
+![Img](./media/D4.png)
 
-6. 项目现象：
+#### 6. 项目现象：
 
 按照接线图正确接好各元器件，将代码上传至Micro:bit主板。上传成功后，上传成功后，不要将MicroUSB线从Micro:bit主板上拔下，<span style="color: rgb(255, 169, 0);">外接电源供电，将面包板专用电源模块上的拨码开关拨到+5V端</span>。接着开始调节传感器模块上的两个电位器感应距离。避障传感器上有两个电位器，分别是接收频率调节电位器和发射功率调节电位器，如下图所示。
 
-![图片不存在](media/d8436b05d00dba8fefa66a620cdee4e5.jpg)
+![img](media/C10.jpg)
 
 使用一字螺丝刀调节发射功率调节电位器，先将电位器顺时针拧到尽头，然后逆时针慢慢往回调，当调节到SLED灯很亮时，微调使传感器上SLED灯介于很亮与微亮之间的**微亮**状态。
 
@@ -1514,31 +1514,31 @@ NE555时基电路提供给发射管TX发射出一定频率的红外信号，红�
 
 可以看到的现象是：当传感器检测到障碍物时，Micro:bit主板上的LED点阵屏显示数字0；没有检测到障碍物时，Micro:bit主板上的LED点阵屏显示数字1。
 
-![图片不存在](./media/3185b9bf5373a8649eff25b2d6877ba2.jpg)
+![Img](./media/ABC16.jpg)
 
-7. 代码说明:
+#### 7. 代码说明:
 
 可以参照项目21的代码说明，这里就不多做介绍了。
 
 ---
 
-项目23 电容触摸传感器
+### 项目23 电容触摸传感器
 
-1. 项目介绍：
+#### 1. 项目介绍：
 
 在本项目中，通过读取电容触摸传感器模块上S端高低电平，判断是否触摸传感器的感应区，并且在Micro:bit主板上的LED点阵屏显示测试结果。
 
-2. 项目元件：
+#### 2. 项目元件：
 
-|![图片不存在](./media/e0c47bb1cc4a5178b9005dba833f7fd5.png)|![图片不存在](./media/81a0c58c8464b10d045884226845110c.png)|![图片不存在](./media/0cb891d41725d75b702317477bd2441f.png)|
+|![Img](./media/0.png)|![Img](./media/177.png)|![Img](./media/C4.png)|
 | :--: | :--: | :--: |
 |Micro:bit主板*1|Micro:bit扩展板*1|电容触摸传感器*1|
-|![图片不存在](./media/dda94299cc2abaff2c9cb8ff7ce365ff.jpg)|![图片不存在](./media/a6ff46e05db89a18ffe62f2f6c66c701.png)|![图片不存在](./media/5a0d069fdb6c0f5901be9f9e2bd07e7d.png)|
+|![Img](./media/137.jpg)|![Img](./media/115.png)|![Img](./media/A25.png)|
 |公对母杜邦线若干|MicroUSB线*1|一字螺丝刀*1|
 
-3. 元件知识：
+#### 3. 元件知识：
 
-![图片不存在](./media/0cb891d41725d75b702317477bd2441f.png)
+![Img](./media/C4.png)
 
 **电容触摸传感器:** 它主要由1个触摸检测芯片 TTP223-BA6 构成。模块上提供一个触摸按键，功能是用可变面积的按键取代传统按键。当我们上电之后，传感器需要约0.5秒的稳定时间，此时间段内不要触摸按键，此时所有功能都被禁止，始终进行自校准，校准周期约为4秒。
 
@@ -1560,7 +1560,7 @@ NE555时基电路提供给发射管TX发射出一定频率的红外信号，红�
 
 **模块原理图:**
 
-![图片不存在](media/56fd49a5552a32ac193119de8cb0a9ad.png)
+![](media/C11.png)
 
 TTP223N-BA6 的输出通过 AHLB（4）引脚选择高电平或低电平有效。通过 TOG（6）引脚选择直接模式或触发模式。
 
@@ -1575,45 +1575,45 @@ TTP223N-BA6 的输出通过 AHLB（4）引脚选择高电平或低电平有效�
 
 当我们用手指触摸电容触摸传感器模块上的感应区时，信号端 S 输出高电平，板载红色LED点亮。我们通过读取模块上 S 端的高低电平，来判断电容触摸模块上的感应区是否感应到触摸。
 
-![图片不存在](media/ff8f47c71f280326dae5d0585c3a1587.png)
+![img](media/C12.png)
 
-4. 项目接线图：
+#### 4. 项目接线图：
 
-![图片不存在](./media/e26229ba050ec5005ba441e418fefbce.png)
+![Img](./media/D5.png)
 
-5. 项目代码：
+#### 5. 项目代码：
 
-![图片不存在](./media/6199a49647ece2c20db1dc5b8a37b0c5.png)
+![Img](./media/D4.png)
 
-6. 项目现象：
+#### 6. 项目现象：
 
 按照接线图正确接好各元器件，将代码上传至Micro:bit主板。上传成功后，利用MicroUSB线连接到计算机上电，可以看到的现象是：当电容触摸传感器模块上的感应区感应到触摸时，板载红色LED灯点亮，Micro:bit主板上的LED点阵屏显示数字1。否则，当没有感应到触摸时，板载红色LED灯熄灭，Micro:bit主板上的LED点阵屏显示数字0。
 
-![图片不存在](./media/681d2b61eda710fa1190b31bb2eb9220.jpg)
+![Img](./media/ABC15.jpg)
 
-8. 代码说明:
+#### 8. 代码说明:
 
 可以参照项目21的代码说明，这里就不多做介绍了。
 
 ---
 
-项目24 光敏传感器
+### 项目24 光敏传感器
 
-1. 项目介绍：
+#### 1. 项目介绍：
 
 光敏传感器模块有个信号输出端，可以输出光照强度的模拟信号。在本项目中，我们将读取传感器的模拟信号，并将测试结果在Micro:bit主板上的LED点阵屏显示出来。
 
-2. 项目元件：
+#### 2. 项目元件：
 
-|![图片不存在](./media/e0c47bb1cc4a5178b9005dba833f7fd5.png)|![图片不存在](./media/81a0c58c8464b10d045884226845110c.png)|![图片不存在](./media/64f4a9e4d9b86ff8b0ef8b66afabffe0.png)|
+|![Img](./media/0.png)|![Img](./media/177.png)|![Img](./media/C5.png)|
 | :--: | :--: | :--: |
 |Micro:bit主板*1|Micro:bit扩展板*1|光敏传感器模块*1
-|![图片不存在](./media/dda94299cc2abaff2c9cb8ff7ce365ff.jpg)|![图片不存在](./media/a6ff46e05db89a18ffe62f2f6c66c701.png)|![图片不存在](./media/5a0d069fdb6c0f5901be9f9e2bd07e7d.png)|
+|![Img](./media/137.jpg)|![Img](./media/115.png)|![Img](./media/A25.png)|
 |公对母杜邦线若干|MicroUSB线*1|一字螺丝刀*1|
 
-3. 元件知识：
+#### 3. 元件知识：
 
-![图片不存在](./media/64f4a9e4d9b86ff8b0ef8b66afabffe0.png)
+![Img](./media/C5.png)
 
 **光敏传感器:** 是一个常用的光敏电阻传感器，它主要由一个光敏电阻元件组成。光敏电阻元件的阻值随着光照强度的变化而变化，此传感器就是利用光敏电阻元件这一特性，设计电路将阻值变化转换为电压变化。光敏电阻传感器可以模拟人对环境光线的强度的判断，方便做出与人友好互动的应用。
 
@@ -1641,47 +1641,47 @@ TTP223N-BA6 的输出通过 AHLB（4）引脚选择高电平或低电平有效�
 
 **模块原理图:**
 
-![图片不存在](media/0a804f6b1ccb475325301d7c9c94f38d.png)
+![](media/C13.png)
 
 当没有光照射时，电阻大小为0.2 MΩ，光敏电阻的信号端（2脚）检测的电压接近0。随着光照强度增大，光敏传感器的电阻值越来越小，所以信号端能检测到的电压越来越大，模拟值也越来越大。
 
-4. 项目接线图：
+#### 4. 项目接线图：
 
-![图片不存在](./media/d6ce51352e835374e681d1ae7a76799f.png)
+![Img](./media/D7.png)
 
-5. 项目代码：
+#### 5. 项目代码：
 
-![图片不存在](./media/5d1a7ca310507aeaa6e5fe873235596f.png)
+![Img](./media/D6.png)
 
-6. 项目现象：
+#### 6. 项目现象：
 
 按照接线图正确接好各元器件，将代码上传至Micro:bit主板。上传成功后，利用MicroUSB线连接到计算机上电，Micro:bit主板上的LED点阵屏显示光照强度模拟值。光线越强，可以看到模拟值越大。
 
-![图片不存在](./media/e29e2a338dd0ec2106a0986798e4016b.jpg)
+![Img](./media/ABC14.jpg)
 
-7. 代码说明:
+#### 7. 代码说明:
 
 可以参照项目21的代码说明，这里就不多做介绍了。
 
 ---
 
-项目25 水滴传感器
+### 项目25 水滴传感器
 
-1. 项目介绍：
+#### 1. 项目介绍：
 
 水滴传感器模块有个信号输出端，可以输出水量大小的模拟信号。在本项目中，我们将读取传感器的模拟信号，并将测试结果在Micro:bit主板上的LED点阵屏显示出来。
 
-2. 项目元件：
+#### 2. 项目元件：
 
-|![图片不存在](./media/e0c47bb1cc4a5178b9005dba833f7fd5.png)|![图片不存在](./media/81a0c58c8464b10d045884226845110c.png)|![图片不存在](./media/3ee049150a7d8652a0d07b3b451b3346.png)|
+|![Img](./media/0.png)|![Img](./media/177.png)|![Img](./media/C6.png)|
 | :--: | :--: | :--: |
 |Micro:bit主板*1|Micro:bit扩展板*1|水滴传感器模块*1|
-|![图片不存在](./media/dda94299cc2abaff2c9cb8ff7ce365ff.jpg)|![图片不存在](./media/a6ff46e05db89a18ffe62f2f6c66c701.png)|![图片不存在](./media/5a0d069fdb6c0f5901be9f9e2bd07e7d.png)|
+|![Img](./media/137.jpg)|![Img](./media/115.png)|![Img](./media/A25.png)|
 |公对母杜邦线若干|MicroUSB线*1|一字螺丝刀*1|
 
-3. 元件知识：
+#### 3. 元件知识：
 
-![图片不存在](./media/3ee049150a7d8652a0d07b3b451b3346.png)
+![Img](./media/C6.png)
 
 **水滴传感器:** 是一个模拟（数字）输入模块，也叫雨水、雨量传感器。可用于各种天气状况的监测，检测是否下雨及雨量的大小，转成模拟信号（AO）输出，并广泛应用于各种天气状况的监测，也可用于汽车自动刮水系统、智能灯光系统和智能天窗系统等。
 
@@ -1703,51 +1703,51 @@ TTP223N-BA6 的输出通过 AHLB（4）引脚选择高电平或低电平有效�
 
 **模块原理图:**
 
-![图片不存在](media/9881f02d69d9560bf118e355a04fd973.jpg)
+![](media/C18.jpg)
 
 水滴传感器通过电路板上裸露的印刷平行线检测水量的大小。水量越多，就会有更多的导线被联通，随着导电的接触面积增大，雨滴感应区 2 脚输出的电压就会逐步上升。信号端 S 检测到的模拟值就越大。除了可以检测水量的大小，它还可以检测空气中的水蒸气。
 
-4. 项目接线图：
+#### 4. 项目接线图：
 
-![图片不存在](./media/3cb90b3e266c4eb3e3c84b7cc9c26760.png)
+![Img](./media/D9.png)
 
-5. 项目代码：
+#### 5. 项目代码：
 
-![图片不存在](./media/5d1a7ca310507aeaa6e5fe873235596f.png)
+![Img](./media/D8.png)
 
-6. 项目现象：
+#### 6. 项目现象：
 
 按照接线图正确接好各元器件，将代码上传至Micro:bit主板。上传成功后，利用MicroUSB线连接到计算机上电。
 
-![图片不存在](./media/95146d931b0cbb048714a4bedda82668.png)
+![Img](./media/C20.png)
 
 在水滴传感器的感应区滴一两滴水（**小心用水，注意不要滴到感应区以外的其他任何地方，包括Micro:bit主板和Micro:bit扩展板**），Micro:bit主板上的LED点阵屏显示此时水滴传感器的模拟值。水量变化，模拟值也会发生变化。水量越多，输出的模拟值越大。
 
-![图片不存在](./media/64c5aed18df66d60dbc1ef79cd9b23b8.jpg)
+![Img](./media/ABC13.jpg)
 
-7. 代码说明:
+#### 7. 代码说明:
 
 可以参照项目21的代码说明，这里就不多做介绍了。
 
 ---
 
-项目26 声音传感器
+### 项目26 声音传感器
 
-1. 项目介绍：
+#### 1. 项目介绍：
 
 声音传感器将外界声音的大小转换成对应的模拟信号，然后通过模块上的信号输出端输出。在本项目中，我们将读取传感器的模拟信号，并且在Micro:bit主板上的LED点阵屏显示测试结果。
 
-2. 项目元件：
+#### 2. 项目元件：
 
-|![图片不存在](./media/e0c47bb1cc4a5178b9005dba833f7fd5.png)|![图片不存在](./media/81a0c58c8464b10d045884226845110c.png)|![图片不存在](./media/7b669a255e2eda49d5aff5b4605891bd.png)|
+|![Img](./media/0.png)|![Img](./media/177.png)|![Img](./media/C7.png)|
 | :--: | :--: | :--: |
 |Micro:bit主板*1|Micro:bit扩展板*1|声音传感器模块*1|
-|![图片不存在](./media/dda94299cc2abaff2c9cb8ff7ce365ff.jpg)|![图片不存在](./media/a6ff46e05db89a18ffe62f2f6c66c701.png)|![图片不存在](./media/5a0d069fdb6c0f5901be9f9e2bd07e7d.png)  |
+|![Img](./media/137.jpg)|![Img](./media/115.png)|![Img](./media/A25.png)  |
 |公对母杜邦线若干|MicroUSB线*1|一字螺丝刀*1|
 
-3. 元件知识：
+#### 3. 元件知识：
 
-![图片不存在](./media/7b669a255e2eda49d5aff5b4605891bd.png)
+![Img](./media/C7.png)
 
 **声音传感器:** 声音传感器通常用于检测周围环境中的声音响度。微型控制板可以通过模拟输入接口采集其输出信号。S引脚是模拟输出，是麦克风电压信号的实时输出。传感器附带一个电位器，这样你就可以调整信号强度。你可以使用它来制作一些交互式作品，如语音操作的开关等。
 
@@ -1769,51 +1769,51 @@ TTP223N-BA6 的输出通过 AHLB（4）引脚选择高电平或低电平有效�
 
 **模块原理图:**
 
-![图片不存在](media/80e0a523c80f30197d6d68476b8e9bbf.png)
+![](media/C21.png)
 
 声音传感器主要由一个高感度麦克风元件和LM386音频功率放大器芯片组成。高感度麦克风元件用于检测外界的声音。利用LM386音频功率放大器芯片设计对高感度麦克风检测到的声音进行放大的电路，最大倍数为200倍。使用时我们可以通过旋转传感器上电位器，调节声音的放大倍数。顺时针调节电位器到尽头，放大倍数最大。
 
-4. 项目接线图：
+#### 4. 项目接线图：
 
-![图片不存在](./media/8ab0fcfae395f685727851e6a3390fbb.png)
+![Img](./media/D11.png)
 
-5. 项目代码：
+#### 5. 项目代码：
 
-![图片不存在](./media/5d1a7ca310507aeaa6e5fe873235596f.png)
+![Img](./media/D12.png)
 
-6. 项目现象：
+#### 6. 项目现象：
 
 按照接线图正确接好各元器件，将代码上传至Micro:bit主板。上传成功后，利用MicroUSB线连接到计算机上电，此时声音传感器上的电源指示灯点亮。
 
-![图片不存在](./media/1ccf5bf23debde8327303bc4644fdf09.png)
+![Img](./media/C23.png)
 
 Micro:bit主板上的LED点阵屏显示声音传感器接收到的声音对应的模拟值，对准模块上的MIC头大声说话（或大呼气）时，可以看到接收到的声音对应的模拟值变大。（**注意：如果声音变化对应的模拟值没有变化并且一直都是数字0，需要用一字螺丝刀顺时针旋转电位器来调节。**）
 
-![图片不存在](./media/2f0212995a38e96ce36e6bb9b1361f15.jpg)
+![Img](./media/ABC12.jpg)
 
-7. 代码说明:
+#### 7. 代码说明:
 
 可以参照项目21的代码说明，这里就不多做介绍了。
 
 ---
 
-项目27 火焰传感器
+### 项目27 火焰传感器
 
-1. 项目介绍：
+#### 1. 项目介绍：
 
 火焰传感器模块有两个信号输出端，分别可输出数字信号与模拟信号。在本项目中，我们分别读取传感器的数字信号与模拟信号，并且在Micro:bit主板上的LED点阵屏显示测试结果。
 
-2. 项目元件：
+#### 2. 项目元件：
 
-|![图片不存在](./media/e0c47bb1cc4a5178b9005dba833f7fd5.png)|![图片不存在](./media/81a0c58c8464b10d045884226845110c.png)|![图片不存在](./media/0f9d66d0470afaf39a8cec2c76abaca1.png)|
+|![Img](./media/0.png)|![Img](./media/177.png)|![Img](./media/C3.png)|
 | :--: | :--: | :--: |
 |Micro:bit主板*1|Micro:bit扩展板*1|火焰传感器模块*1|
-|![图片不存在](./media/dda94299cc2abaff2c9cb8ff7ce365ff.jpg)|![图片不存在](./media/a6ff46e05db89a18ffe62f2f6c66c701.png)|![图片不存在](./media/5a0d069fdb6c0f5901be9f9e2bd07e7d.png)    |
+|![Img](./media/137.jpg)|![Img](./media/115.png)|![Img](./media/A25.png)    |
 |公对母杜邦线若干|MicroUSB线*1|一字螺丝刀*1    |
 
-3. 元件知识：
+#### 3. 元件知识：
 
-![图片不存在](./media/0f9d66d0470afaf39a8cec2c76abaca1.png)
+![Img](./media/C3.png)
 
 **火焰传感器:** 它对火焰光谱特别灵敏，且灵敏度可调。性能稳定，是救火机器人的必备部件。火焰传感器上有一个远红外火焰探头，起着非常重要的作用，它可以用作机器人的眼睛来寻找火源或足球。利用它可以制作灭火机器人、足球机器人等。
 
@@ -1837,57 +1837,57 @@ Micro:bit主板上的LED点阵屏显示声音传感器接收到的声音对应�
 
 **模块原理图:**
 
-![图片不存在](media/089dff9e74d8745efbab3cd38da8af82.png)
+![](media/C24.png)
 
 红外火焰传感器能够探测到波长在700纳米～1000纳米范围内的红外光，探测角度为60，其中红外光波长在880纳米附近时，其灵敏度达到最大。从电路原理图我们可以看到，上电后红色LED2先点亮，红色LED1处于熄灭状态，检测到火焰时，数字信号端D0输出低电平，红色LED1将点亮。红外火焰探头将外界红外光的强弱变化转化为电流的变化，通过A/D转换器反映为0～255范围内数值的变化。外界红外光越强，数值越小；红外光越弱，数值越大。
 
-4. 项目接线图：
+#### 4. 项目接线图：
 
-![图片不存在](./media/482499c952de8294935b7a478e4a9e65.png)
+![Img](./media/D13.png)
 
-5. 项目代码：
+#### 5. 项目代码：
 
-![图片不存在](./media/ba0e1605a8fa5a34d72275042cb702b2.png)
+![Img](./media/D14.png)
 
-6. 项目现象：
+#### 6. 项目现象：
 
 按照接线图正确接好各元器件，将代码上传至Micro:bit主板。上传成功后，利用MicroUSB线连接到计算机上电，此时火焰传感器上的红色LED2点亮。使用一字螺丝刀旋转火焰传感器上的电位器，微调使传感器上红色LED1灯介于亮与不亮之间的**不亮**状态。如下图所示：
 
-![图片不存在](media/10bf2a7e2b5b500565a157d713825ce6.png)
+![img](media/C26.png)
 
 可以看到的现象是：当传感器检测到障碍物火焰时，Micro:bit主板上的LED点阵屏显示数字0和模拟信号值（远小于1023）；没有检测到火焰时，Micro:bit主板上的LED点阵屏显示数字1和模拟信号值（小于1023但非常接近1023）。
 
-![图片不存在](./media/f11621a3bb1ac8acb544c1a7076a4f3b.jpg)
+![Img](./media/ABC11.jpg)
 
-7. 代码说明:
+#### 7. 代码说明:
 
-![图片不存在](./media/3fe15af352293c0b178c5f20b3eae0ae.png)
+![Img](./media/D29.png)
 
 火焰传感器读取数字电平信号输出，并在Microbit主板上的LED点阵显示电平信号。
 
-![图片不存在](./media/e0aaccf1c1f122dee925f6ecdfa7353d.png)
+![Img](./media/D30.png)
 
 火焰传感器读取模拟信号输出，并在Microbit主板上的LED点阵显示模拟信号。
 
 ---
 
-项目28 模拟气体(MQ-2)传感器
+### 项目28 模拟气体(MQ-2)传感器
 
-1. 项目介绍：
+#### 1. 项目介绍：
 
 模拟气体(MQ-2)传感器模块有两个信号输出端，分别可输出数字信号与模拟信号。在本项目中，我们分别读取传感器的数字信号与模拟信号，并且在Micro:bit主板上的LED点阵屏显示测试结果。
 
-2. 项目元件：
+#### 2. 项目元件：
 
-|![图片不存在](./media/e0c47bb1cc4a5178b9005dba833f7fd5.png)|![图片不存在](./media/81a0c58c8464b10d045884226845110c.png)|![图片不存在](./media/76f627868e96dc6bb14bfff4afc44300.png)|
+|![Img](./media/0.png)|![Img](./media/177.png)|![Img](./media/142.png)|
 | :--: | :--: | :--: |
 |Micro:bit主板*1|Micro:bit扩展板*1|模拟气体(MQ-2)传感器模块*1|
-|![图片不存在](./media/dda94299cc2abaff2c9cb8ff7ce365ff.jpg)|![图片不存在](./media/a6ff46e05db89a18ffe62f2f6c66c701.png)|![图片不存在](./media/5a0d069fdb6c0f5901be9f9e2bd07e7d.png)    |
+|![Img](./media/137.jpg)|![Img](./media/115.png)|![Img](./media/A25.png)    |
 |公对母杜邦线若干|MicroUSB线*1| 一字螺丝刀*1   |
 
-3. 元件知识：
+#### 3. 元件知识：
 
-![图片不存在](./media/76f627868e96dc6bb14bfff4afc44300.png)
+![Img](./media/142.png)
 
 **模拟气体(MQ-2)传感器:** 它主要用到了MQ-2 可燃气体、烟雾传感器元件。该元件所使用的气敏材料是在清新空气中电导率较低的二氧化锡(SnO2)。当传感器所处环境中存在可燃气体时，传感器的电导率随空气中可燃气体浓度的增加而增大。该传感器对液化气、丙烷、氢气的灵敏度高，对天然气和其它可燃蒸汽的检测也很理想。它可检测多种可燃性气体，是一款适合多种应用的低成本传感器。
 
@@ -1909,53 +1909,53 @@ Micro:bit主板上的LED点阵屏显示声音传感器接收到的声音对应�
 
 **模块原理图:**
 
-![图片不存在](media/441c4a6ca19a2bdad965eac592522d68.png)
+![](media/143.png)
 
 模拟气体(MQ-2)传感器与烟雾接触时，晶粒间界处的势垒受到烟雾的浓度变化而变化，就会引起表面导电率的变化。利用这一点就可以获得这种烟雾存在的信息，烟雾的浓度越大，导电率越大，输出电阻越低，则输出的模拟信号就越大。
 
 使用时，A 端读取对应气体的模拟值；D 端连接一个LM393芯片（电压比较器），我们可以通过电位器调节测量气体报警临界点，在 D 端输出数字值。当测量气体含量超过临界点时，D 端输出低电平；测量气体含量没超过临界点时，D 端输出高电平。
 
-4. 项目接线图：
+#### 4. 项目接线图：
 
-![图片不存在](./media/8650526e021eb94a15abe000aaf21b08.png)
+![Img](./media/164.png)
 
-5. 项目代码：
+#### 5. 项目代码：
 
-![图片不存在](./media/ba0e1605a8fa5a34d72275042cb702b2.png)
+![Img](./media/156.png)
 
-6. 项目现象：
+#### 6. 项目现象：
 
 按照接线图正确接好各元器件，将代码上传至Micro:bit主板。上传成功后，利用MicroUSB线连接到计算机上电，此时模拟气体(MQ-2)传感器上的电源指示灯点亮。使用一字螺丝刀旋转模拟气体(MQ-2)传感器上的电位器，微调使传感器上红色LED灯介于亮与不亮之间的**不亮**状态。如下图所示：
 
-![图片不存在](media/f4cde132f3ebdef1bf4fd378fb128b85.png)
+![img](media/180.png)
 
 可以看到的现象是：当传感器检测到烟雾或可燃性气体时，红色LED点亮，Micro:bit主板上的LED点阵屏显示数字0和模拟信号值，同时传感器检测到的烟雾或可燃性气体浓度越大，模拟信号值也越大；没有检测到烟雾或可燃性气体时，Micro:bit主板上的LED点阵屏显示数字1和模拟信号值。
 
-![图片不存在](./media/b367d082366d170d65c6eb848843203a.jpg)
+![Img](./media/ABC10.jpg)
 
-7. 代码说明:
+#### 7. 代码说明:
 
 可以参照项目27的代码说明，这里就不多做介绍了。
 
 ---
 
-项目29 LCD 1602 显示屏
+### 项目29 LCD 1602 显示屏
 
-1. 项目介绍：
+#### 1. 项目介绍：
 
 LCD1602液晶显示屏是广泛使用的一种字符型液晶显示模块。LCD1602液晶显示屏采用标准的14脚（无背光）或16脚（带背光）接口，通过显示屏驱动IC，实现I2C控制，节省了单片机引脚。这一项目中我们将使用LCD1602液晶显示屏显示字符串。
 
-2. 项目元件：
+#### 2. 项目元件：
 
-|![图片不存在](./media/e0c47bb1cc4a5178b9005dba833f7fd5.png)|![图片不存在](./media/81a0c58c8464b10d045884226845110c.png)|![图片不存在](./media/08e338f485a7699613f8e902884a1991.png)|![图片不存在](./media/dda94299cc2abaff2c9cb8ff7ce365ff.jpg)|
+|![Img](./media/0.png)|![Img](./media/177.png)|![Img](./media/C27.png)|![Img](./media/137.jpg)|
 | :--: | :--: | :--: |:--: |
 |Micro:bit主板*1|Micro:bit扩展板*1|LCD1602显示屏模块*1|公对母杜邦线若干|
-|![图片不存在](./media/bae3eacd95d794ed928a1d837f2073c6.png)|![图片不存在](./media/dc4d439a9c04b810960e497d95d3da88.png)|![图片不存在](./media/a6ff46e05db89a18ffe62f2f6c66c701.png)|![图片不存在](./media/d442bc0b78f29946e69381e0403d5b7c.png)|
+|![Img](./media/178.png)|![Img](./media/A26.png)|![Img](./media/115.png)|![Img](./media/116.png)|
 |电源适配器*1|面包板专用电源模块*1| MicroUSB线*1| 面包板*1|
-|![图片不存在](./media/5a0d069fdb6c0f5901be9f9e2bd07e7d.png) |![图片不存在](./media/8d920d12138bd3b4e62f02cecc2c63a3.png)|   |   |
+|![Img](./media/A25.png) |![Img](./media/119.png)|   |   |
 |一字螺丝刀*1 |面包板连接线若干|   |    |
 
-3. 元件知识：
+#### 3. 元件知识：
 
 **I2C串行通信：**
 
@@ -1963,7 +1963,7 @@ I2C通信协议是Inter-Integrated Circuit（IIC）的缩写，也叫作两线�
 
 其最大的优点是只需要两根线就可以完成数据的传输，对于系统线路的繁琐也减少了很多，这种总线可以并行联结127个节点，并且支持多主机，从机一般不需要外接电源，因为I2C总线可以把电源传输到从机。如下图。
 
-![图片不存在](./media/1a05ecfd0ca4d848fcb36e9e64b918f9.png)
+![img](./media/C28.png)
 
 I2C总线的数据传输采用8位数据传输的方式，通常一个字节的数据传输是由9个时钟信号组成，8个时钟信号传输数据，最后一个时钟信号用于传输结束的标志。同时，I2C总线也支持多字节的数据传输，不断重复上述过程，即可完成多字节的数据传输。
 
@@ -1981,9 +1981,9 @@ I2C协议的基本组成部分包括以下内容：
 
 具体通信协议请移步官网：[https://www.nxp.com/](https://www.nxp.com/)
 
-![图片不存在](./media/45879b76f1cedfd01e35057fb8d6f2cd.png)
+![img](./media/C29.png)
 
-![图片不存在](./media/b0bad756333cb5a27dce012e4c4f2c27.png)
+![img](./media/C30.png)
 
 Arduino提供了一个名为Wire.h的I2C协议集成库，可以通过调用其函数实现I2C通信，从而实现与I2C/TWI设备的通信。
 
@@ -1997,11 +1997,11 @@ Arduino提供了一个名为Wire.h的I2C协议集成库，可以通过调用其�
 
 LCD1602显示屏模块，简化了LCD1602接线 ，使用IIC/I2C接口，不仅方便接线，还更加节省GPIO口。它能兼容Arduino的库文件，方便快速开发。
 
-![图片不存在](./media/98787a57152b004e6a0901972b24e2ce.png)
+![Img](./media/C31.png)
 
 可以通过IIC扩展板上的电位器，调节对比度，使用一字螺丝刀旋转电位器。
 
-![图片不存在](./media/ba9387552c8647762c9ea04eb759bee9.png)
+![Img](./media/E1.png)
 
 **模块参数：**
 
@@ -2021,7 +2021,7 @@ IIC地址 : 0x27
 
 **模块原理图：**
 
-![图片不存在](./media/2f4b20fae654d2f68bf330d11b7d7034.png)
+![Img](./media/C32.png)
 
 LCD1602 显示屏采用标准的16脚接口，其中：
 
@@ -2039,400 +2039,400 @@ LCD1602 显示屏采用标准的16脚接口，其中：
 
 LCD1602 显示屏使用时需要至少7个IO口才能驱动起来，占用的IO口太多了，其他传感器就不够用了。IIC LCD1602显示屏模块使用了I2C接口的转接板，使用IIC接口，简化了LCD1602接线 。不仅方便接线，还更加节省IO口。
 
-4. 项目接线图：
+#### 4. 项目接线图：
 
-![图片不存在](./media/606f3686d3b721dda4916545e3cdb5b6.png)
+![Img](./media/C33.png)
 
-5. 项目代码：
+#### 5. 项目代码：
 
-![图片不存在](./media/12ed5dd656e38fe79214ffb7e4347255.png)
+![Img](./media/D35.png)
 
-6. 项目现象：
+#### 6. 项目现象：
 
 按照接线图正确接好各元器件，将代码上传至Micro:bit主板。上传成功后，不要将MicroUSB线从Micro:bit主板上拔下，<span style="color: rgb(255, 169, 0);">外接电源供电，将面包板专用电源模块上的拨码开关拨到+5V端</span>。可以看到的现象是：LCD1602显示屏第一行居中打印出“ **Hello World!** ” ，第二行居中打印出 “ **Hello Keyes!** ” 。
 
-![图片不存在](./media/19de08e02f92ae360aa704458d17c837.png)
+![Img](./media/C35.png)
 
 <span style="color: rgb(255, 76, 65);">注意:</span> 如果你看不见屏幕上的任何东西或显示不清楚，请尝试缓慢旋转LCD1602背面的白色旋钮，以调节对比度，直到屏幕可以清晰显示。
 
-![图片不存在](./media/ba9387552c8647762c9ea04eb759bee9.png)
+![Img](./media/E1.png)
 
-7. 代码说明：
+#### 7. 代码说明：
 
-![图片不存在](./media/b4722410ea343423d47f25d99cac5ac1.png) 
+![Img](./media/D36.png) 
 
 初始化对象名 lcd，地址是0x27，16列2行，LCD初始化管脚。
 
-![图片不存在](./media/e0d9ae03c239d63fa2d89cba372fbab3.png)
+![Img](./media/D37.png)
 
 打开背光。
 
-![图片不存在](./media/918b1961138c8d8f1e9867eadf514eba.png)
+![Img](./media/D38.png)
 
 设置字符显示。
 
-![图片不存在](./media/22e77c8c72b045f3122b45de74b17121.png) 
+![Img](./media/D39.png) 
 
 在显示屏上设置起始坐标，在第一行第三列开始打印 “Hello World!” 。
 
 ---
 
-项目30 人体感应报警器
+### 项目30 人体感应报警器
 
-1. 项目介绍：
+#### 1. 项目介绍：
 
 前面的项目中我们已经学习了人体红外热释传感器的工作原理，那么，在本项目中，我们将结合人体红外热释传感器、有源蜂鸣器和LED灯来模拟入侵检测报警器。实现人体红外热释传感器检测到附近有人经过时有源蜂鸣器响起，LED灯快速闪烁的效果。
 
-2. 项目元件：
+#### 2. 项目元件：
 
-|![图片不存在](./media/e0c47bb1cc4a5178b9005dba833f7fd5.png)|![图片不存在](./media/d442bc0b78f29946e69381e0403d5b7c.png)|![图片不存在](./media/da669743d7e2f9e1880430b0ab12ca06.png)|![图片不存在](./media/08cac8e036b616593db2d11a13d7922d.png)|
+|![Img](./media/0.png)|![Img](./media/116.png)|![Img](./media/C1.png)|![Img](./media/136.png)|
 | :--: | :--: | :--: |:--: |
 |Micro:bit主板*1|面包板*1|人体红外热释传感器模块*1|有源蜂鸣器模块*1|
-|![图片不存在](./media/dda94299cc2abaff2c9cb8ff7ce365ff.jpg)|![图片不存在](./media/a6ff46e05db89a18ffe62f2f6c66c701.png)|![图片不存在](./media/81a0c58c8464b10d045884226845110c.png)| ![图片不存在](./media/8d920d12138bd3b4e62f02cecc2c63a3.png)|
+|![Img](./media/137.jpg)|![Img](./media/115.png)|![Img](./media/177.png)| ![Img](./media/119.png)|
 |公对母杜邦线若干|Micro USB线*1|Micro:bit扩展板*1|面包板连接线若干|
-|![图片不存在](./media/28c28e6163de71f861c1f8f9bf621ee2.png)|![图片不存在](./media/11f324f82f890b0691f134e1ea7a3765.png) |    |    |
+|![Img](./media/117.png)|![Img](./media/118.png) |    |    |
 |红色LED*1|220Ω电阻*1 |    |     |
 
-3. 项目接线图：
+#### 3. 项目接线图：
 
-![图片不存在](./media/e4ac39b10d7b1bcd82c93bacc3648892.png)
+![Img](./media/D15.png)
 
-4. 项目代码：
+#### 4. 项目代码：
 
-![图片不存在](./media/3399c5dfea1cc38da9f0dde269c78d75.png)
+![Img](./media/D16.png)
 
-5. 项目现象：
+#### 5. 项目现象：
 
-按照接线图正确接好各元器件，将代码上传至Micro:bit主板。上传成功后，利用MicroUSB线连接到计算机上电，可以看到的现象是：当人体红外热释传感器检测到附近有人经过时，人体红外热释传感器模块上的红灯灭，Micro:bit主板上的LED点阵显示“![图片不存在](./media/6c65bbb935d0b5bd5a79266b565a68d1.png)”图案，有源蜂鸣器发出警报，LED灯快速闪烁。否则，人体红外热释传感器模块上的红灯亮，Micro:bit主板上的LED点阵显示“![图片不存在](./media/b2ca88ca6961398b7b45aa53305ad9ac.png)”图案，有源蜂鸣器不发声，LED灯熄灭。
+按照接线图正确接好各元器件，将代码上传至Micro:bit主板。上传成功后，利用MicroUSB线连接到计算机上电，可以看到的现象是：当人体红外热释传感器检测到附近有人经过时，人体红外热释传感器模块上的红灯灭，Micro:bit主板上的LED点阵显示“![Img](./media/146.png)”图案，有源蜂鸣器发出警报，LED灯快速闪烁。否则，人体红外热释传感器模块上的红灯亮，Micro:bit主板上的LED点阵显示“![Img](./media/147.png)”图案，有源蜂鸣器不发声，LED灯熄灭。
 
-![图片不存在](./media/25221a247accc7f7b98b092afa024d53.jpg)
+![Img](./media/ABC9.jpg)
 
-6. 代码说明:
+#### 6. 代码说明:
 
-![图片不存在](./media/d42cebe1d311554eafae349dd8f228eb.png) 
+![Img](./media/D31.png) 
 
 设置引脚P2的输出电压为高\低电平，1为高电平，点亮LED；0为低电平，熄灭LED。 
 
-![图片不存在](./media/fd82b8ac9ab4ed73dd3a363cc4bc132d.png)
+![Img](./media/D32.png)
 
 如果ture里的表达式为真，则执行“则”下面的代码，如果ture里的表达式为假，则执行“否则”下面的代码。 
 
-![图片不存在](./media/52417db90287e279c6384eca1d064d2c.png)
+![Img](./media/D33.png)
 
 运动检测，检测到有人经过。
 
-![图片不存在](./media/59e4602aa26857ec6e6611e44910cafa.png)
+![Img](./media/D34.png)
 
 在Microbit主板上的LED点阵上绘制特定图案。
 
 ---
 
-项目31 障碍物检测报警器
+### 项目31 障碍物检测报警器
 
-1. 项目介绍：
+#### 1. 项目介绍：
 
 上一项目中我们学习了使用人体红外热释传感器检测附近有人经过时进行报警提醒。在这一本项目中，我们将结合避障传感器、有源蜂鸣器和LED灯来模拟障碍物检测报警器。
 
-2. 项目元件：
+#### 2. 项目元件：
 
-|![图片不存在](./media/e0c47bb1cc4a5178b9005dba833f7fd5.png)|![图片不存在](./media/d442bc0b78f29946e69381e0403d5b7c.png)|![图片不存在](./media/06763561566221a1869025569aa0f947.png)|![图片不存在](./media/08cac8e036b616593db2d11a13d7922d.png)|
+|![Img](./media/0.png)|![Img](./media/116.png)|![Img](./media/C2.png)|![Img](./media/136.png)|
 | :--: | :--: | :--: |:--: |
 |Micro:bit主板*1|面包板*1|避障传感器模块*1|有源蜂鸣器模块*1|
-|![图片不存在](./media/dda94299cc2abaff2c9cb8ff7ce365ff.jpg)|![图片不存在](./media/a6ff46e05db89a18ffe62f2f6c66c701.png)|![图片不存在](./media/81a0c58c8464b10d045884226845110c.png)| ![图片不存在](./media/8d920d12138bd3b4e62f02cecc2c63a3.png)|
+|![Img](./media/137.jpg)|![Img](./media/115.png)|![Img](./media/177.png)| ![Img](./media/119.png)|
 |公对母杜邦线若干|Micro USB线*1|Micro:bit扩展板*1|面包板连接线若干|
-|![图片不存在](./media/28c28e6163de71f861c1f8f9bf621ee2.png)|![图片不存在](./media/11f324f82f890b0691f134e1ea7a3765.png) |![图片不存在](./media/bae3eacd95d794ed928a1d837f2073c6.png)|![图片不存在](./media/dc4d439a9c04b810960e497d95d3da88.png)|
+|![Img](./media/117.png)|![Img](./media/118.png) |![Img](./media/178.png)|![Img](./media/A26.png)|
 |红色LED*1|220Ω电阻*1 |电源适配器*1|面包板专用电源模块*1|
 
-3. 项目接线图：
+#### 3. 项目接线图：
 
-![图片不存在](./media/bed63de10ad1f99fb858f3dc971b1b00.png)
+![Img](./media/D17.png)
 
-4. 项目代码：
+#### 4. 项目代码：
 
-![图片不存在](./media/1bbae8d86af55be1c14671167bdb75ae.png)
+![Img](./media/D18.png)
 
-5. 项目现象：
+#### 5. 项目现象：
 
-按照接线图正确接好各元器件，将代码上传至Micro:bit主板。上传成功后，不要将MicroUSB线从Micro:bit主板上拔下，<span style="color: rgb(255, 169, 0);">外接电源供电，将面包板专用电源模块上的拨码开关拨到+5V端</span>。可以看到的现象是：当避障传感器检测到有障碍物时，避障传感器模块上的SLED灯亮，Micro:bit主板上的LED点阵显示“![图片不存在](./media/6c65bbb935d0b5bd5a79266b565a68d1.png)”图案，有源蜂鸣器发出警报，外接LED灯快速闪烁。否则，避障传感器模块上的SLED灯不亮，Micro:bit主板上的LED点阵显示“![图片不存在](./media/b2ca88ca6961398b7b45aa53305ad9ac.png)”图案，有源蜂鸣器不发声，外接LED灯熄灭。
+按照接线图正确接好各元器件，将代码上传至Micro:bit主板。上传成功后，不要将MicroUSB线从Micro:bit主板上拔下，<span style="color: rgb(255, 169, 0);">外接电源供电，将面包板专用电源模块上的拨码开关拨到+5V端</span>。可以看到的现象是：当避障传感器检测到有障碍物时，避障传感器模块上的SLED灯亮，Micro:bit主板上的LED点阵显示“![Img](./media/146.png)”图案，有源蜂鸣器发出警报，外接LED灯快速闪烁。否则，避障传感器模块上的SLED灯不亮，Micro:bit主板上的LED点阵显示“![Img](./media/147.png)”图案，有源蜂鸣器不发声，外接LED灯熄灭。
 
-![图片不存在](./media/7104327dc4de520e0d0a8692bfa6879e.jpg)
+![Img](./media/ABC8.jpg)
 
-6. 代码说明:
+#### 6. 代码说明:
 
 可以参照项目30的代码说明，这里就不多做介绍了。
 
 ---
 
-项目32 触摸报警
+### 项目32 触摸报警
 
-1. 项目介绍：
+#### 1. 项目介绍：
 
 前面的项目中我们已经学习了电容触摸传感器的工作原理。那么，在本项目中，我们将结合电容触摸传感器、有源蜂鸣器和LED灯来模拟触摸报警。
 
-2. 项目元件：
+#### 2. 项目元件：
 
-|![图片不存在](./media/e0c47bb1cc4a5178b9005dba833f7fd5.png)|![图片不存在](./media/d442bc0b78f29946e69381e0403d5b7c.png)|![图片不存在](./media/0cb891d41725d75b702317477bd2441f.png)|![图片不存在](./media/08cac8e036b616593db2d11a13d7922d.png)
+|![Img](./media/0.png)|![Img](./media/116.png)|![Img](./media/C4.png)|![Img](./media/136.png)
 | :--: | :--: | :--: |:--: |
 |Micro:bit主板*1|面包板*1|电容触摸传感器模块*1|有源蜂鸣器模块*1|
-|![图片不存在](./media/dda94299cc2abaff2c9cb8ff7ce365ff.jpg)|![图片不存在](./media/a6ff46e05db89a18ffe62f2f6c66c701.png)|![图片不存在](./media/81a0c58c8464b10d045884226845110c.png)| ![图片不存在](./media/8d920d12138bd3b4e62f02cecc2c63a3.png)|
+|![Img](./media/137.jpg)|![Img](./media/115.png)|![Img](./media/177.png)| ![Img](./media/119.png)|
 |公对母杜邦线若干|Micro USB线*1|Micro:bit扩展板*1|面包板连接线若干|
-|![图片不存在](./media/28c28e6163de71f861c1f8f9bf621ee2.png)|![图片不存在](./media/11f324f82f890b0691f134e1ea7a3765.png) |    |    |
+|![Img](./media/117.png)|![Img](./media/118.png) |    |    |
 |红色LED*1|220Ω电阻*1 |    |    |
 
-3. 项目接线图：
+#### 3. 项目接线图：
 
-![图片不存在](./media/d319f71716c5a23150f96519dfa24910.png)
+![Img](./media/D19.png)
 
-4. 项目代码：
+#### 4. 项目代码：
 
-![图片不存在](./media/ae23725451964045dbd984730c9992be.png)
+![Img](./media/D20.png)
 
-5. 项目现象：
+#### 5. 项目现象：
 
-按照接线图正确接好各元器件，将代码上传至Micro:bit主板。上传成功后，利用MicroUSB线连接到计算机上电，可以看到的现象是：用手指触摸电容触摸传感器模块上的感应区时，模块上的板载红色LED灯点亮，Micro:bit主板上的LED点阵显示“![图片不存在](./media/6c65bbb935d0b5bd5a79266b565a68d1.png)”图案，有源蜂鸣器发出警报，外接LED灯快速闪烁。否则，模块上的板载红色LED灯不亮，Micro:bit主板上的LED点阵显示“![图片不存在](./media/b2ca88ca6961398b7b45aa53305ad9ac.png)”图案，有源蜂鸣器不发声，外接LED灯熄灭。
+按照接线图正确接好各元器件，将代码上传至Micro:bit主板。上传成功后，利用MicroUSB线连接到计算机上电，可以看到的现象是：用手指触摸电容触摸传感器模块上的感应区时，模块上的板载红色LED灯点亮，Micro:bit主板上的LED点阵显示“![Img](./media/146.png)”图案，有源蜂鸣器发出警报，外接LED灯快速闪烁。否则，模块上的板载红色LED灯不亮，Micro:bit主板上的LED点阵显示“![Img](./media/147.png)”图案，有源蜂鸣器不发声，外接LED灯熄灭。
 
-![图片不存在](./media/725b3cf8b5621896dfeb558d6abb647b.jpg)
+![Img](./media/ABC7.jpg)
 
-6. 代码说明:
+#### 6. 代码说明:
 
 可以参照项目30的代码说明，这里就不多做介绍了。
 
 ---
 
-项目33 火焰报警
+### 项目33 火焰报警
 
-1. 项目介绍：
+#### 1. 项目介绍：
 
 生活中，火灾的危害是相当大的。这一课我们来学习制作一个火灾报警系统，它虽然简单，但却是非常具有意义的。原理很简单，利用火焰传感器检测，检测的结果控制一个有源蜂鸣器响起，LED闪烁，实现火焰报警的效果。
 
-2. 项目元件：
+#### 2. 项目元件：
 
-|![图片不存在](./media/e0c47bb1cc4a5178b9005dba833f7fd5.png)|![图片不存在](./media/d442bc0b78f29946e69381e0403d5b7c.png)|![图片不存在](./media/0f9d66d0470afaf39a8cec2c76abaca1.png)|![图片不存在](./media/08cac8e036b616593db2d11a13d7922d.png)|
+|![Img](./media/0.png)|![Img](./media/116.png)|![Img](./media/C3.png)|![Img](./media/136.png)|
 | :--: | :--: | :--: |:--: |
 |Micro:bit主板*1|面包板*1|火焰传感器模块*1|有源蜂鸣器模块*1|
-|![图片不存在](./media/dda94299cc2abaff2c9cb8ff7ce365ff.jpg)|![图片不存在](./media/a6ff46e05db89a18ffe62f2f6c66c701.png)|![图片不存在](./media/81a0c58c8464b10d045884226845110c.png)| ![图片不存在](./media/8d920d12138bd3b4e62f02cecc2c63a3.png)|
+|![Img](./media/137.jpg)|![Img](./media/115.png)|![Img](./media/177.png)| ![Img](./media/119.png)|
 |公对母杜邦线若干|Micro USB线*1|Micro:bit扩展板*1|面包板连接线若干|
-|![图片不存在](./media/28c28e6163de71f861c1f8f9bf621ee2.png)|![图片不存在](./media/11f324f82f890b0691f134e1ea7a3765.png) |   |   |
+|![Img](./media/117.png)|![Img](./media/118.png) |   |   |
 |红色LED*1|220Ω电阻*1 |   |   |
 
-3. 项目接线图：
+#### 3. 项目接线图：
 
-![图片不存在](./media/330c60c74de6043aa44937c1fa62b906.png)
+![Img](./media/D21.png)
 
-4. 项目代码：
+#### 4. 项目代码：
 
-![图片不存在](./media/1bbae8d86af55be1c14671167bdb75ae.png)
+![Img](./media/D22.png)
 
-5. 项目现象：
+#### 5. 项目现象：
 
-按照接线图正确接好各元器件，将代码上传至Micro:bit主板。上传成功后，利用MicroUSB线连接到计算机上电，可以看到的现象是：当火焰传感器检测到火焰时，Micro:bit主板上的LED点阵显示“![图片不存在](./media/6c65bbb935d0b5bd5a79266b565a68d1.png)”图案，有源蜂鸣器发出警报，LED灯快速闪烁。否则，Micro:bit主板上的LED点阵显示“![图片不存在](./media/b2ca88ca6961398b7b45aa53305ad9ac.png)”图案，有源蜂鸣器不发声，LED灯熄灭。
+按照接线图正确接好各元器件，将代码上传至Micro:bit主板。上传成功后，利用MicroUSB线连接到计算机上电，可以看到的现象是：当火焰传感器检测到火焰时，Micro:bit主板上的LED点阵显示“![Img](./media/146.png)”图案，有源蜂鸣器发出警报，LED灯快速闪烁。否则，Micro:bit主板上的LED点阵显示“![Img](./media/147.png)”图案，有源蜂鸣器不发声，LED灯熄灭。
 
-![图片不存在](./media/4bcafc2559e4b9973e23a6fe560094f8.jpg)
+![Img](./media/ABC6.jpg)
 
-6. 代码说明:
+#### 6. 代码说明:
 
 可以参照项目30的代码说明，这里就不多做介绍了。
 
 ---
 
-项目34 夜光灯
+### 项目34 夜光灯
 
-1. 项目介绍：
+#### 1. 项目介绍：
 
 前面我们已经学习了光敏传感器的工作原理，在这一项目中，我们将光敏传感器和LED灯组合实验，实现光敏传感器检测到光照强度模拟值高于设定值时LED灯熄灭，低于设定值时LED灯点亮的效果。
 
-2. 项目元件：
+#### 2. 项目元件：
 
-|![图片不存在](./media/e0c47bb1cc4a5178b9005dba833f7fd5.png)|![图片不存在](./media/d442bc0b78f29946e69381e0403d5b7c.png)|![图片不存在](./media/64f4a9e4d9b86ff8b0ef8b66afabffe0.png)|
+|![Img](./media/0.png)|![Img](./media/116.png)|![Img](./media/C5.png)|
 | :--: | :--: | :--: |
 |Micro:bit主板*1|面包板*1|光敏传感器模块*1|
-|![图片不存在](./media/dda94299cc2abaff2c9cb8ff7ce365ff.jpg)|![图片不存在](./media/a6ff46e05db89a18ffe62f2f6c66c701.png)|![图片不存在](./media/81a0c58c8464b10d045884226845110c.png)|
+|![Img](./media/137.jpg)|![Img](./media/115.png)|![Img](./media/177.png)|
 |公对母杜邦线若干|Micro USB线*1|Micro:bit扩展板*1|
-|![图片不存在](./media/28c28e6163de71f861c1f8f9bf621ee2.png)| ![图片不存在](./media/8d920d12138bd3b4e62f02cecc2c63a3.png)|![图片不存在](./media/11f324f82f890b0691f134e1ea7a3765.png) |
+|![Img](./media/117.png)| ![Img](./media/119.png)|![Img](./media/118.png) |
 |红色LED*1|面包板连接线若干|220Ω电阻*1 |
 
-3. 项目接线图：
+#### 3. 项目接线图：
 
-![图片不存在](./media/c5aecb7a87487eff81f0891d966ac33e.png)
+![Img](./media/D23.png)
 
-4. 项目代码：
+#### 4. 项目代码：
 
 <span style="color: rgb(255, 76, 65);">注意：</span>代码中的阈值200可以根据环境中实际的光照强度更改。
 
-![图片不存在](./media/7e55a753f857cee9e8253870c19c30bc.png)
+![Img](./media/D24.png)
 
-5. 项目现象：
+#### 5. 项目现象：
 
-按照接线图正确接好各元器件，将代码上传至Micro:bit主板。上传成功后，利用MicroUSB线连接到计算机上电，可以看到的现象是：使用手机的照明灯对着光敏传感器模块上的光敏电阻照射，当光敏传感器检测到光照强度的模拟值大于200时，Micro:bit主板上的LED点阵显示“![图片不存在](./media/b2ca88ca6961398b7b45aa53305ad9ac.png)”图案，外接LED灯不亮。否则，Micro:bit主板上的LED点阵显示“![图片不存在](./media/0d6ef88f5c9722cc9742c8d557181649.png)”图案，外接LED灯点亮。
+按照接线图正确接好各元器件，将代码上传至Micro:bit主板。上传成功后，利用MicroUSB线连接到计算机上电，可以看到的现象是：使用手机的照明灯对着光敏传感器模块上的光敏电阻照射，当光敏传感器检测到光照强度的模拟值大于200时，Micro:bit主板上的LED点阵显示“![Img](./media/147.png)”图案，外接LED灯不亮。否则，Micro:bit主板上的LED点阵显示“![Img](./media/D40.png)”图案，外接LED灯点亮。
 
-![图片不存在](./media/c8cc5d8f59c394eec1805a79062836ed.jpg)
+![Img](./media/ABC5.jpg)
 
-6. 代码说明:
+#### 6. 代码说明:
 
-![图片不存在](./media/d42cebe1d311554eafae349dd8f228eb.png)
+![Img](./media/D31.png)
 
 设置引脚P2的输出电压为高\低电平，1为高电平，点亮LED；0为低电平，熄灭LED。 
 
-![图片不存在](./media/fd82b8ac9ab4ed73dd3a363cc4bc132d.png)
+![Img](./media/D32.png)
 
 如果ture里的表达式为真，则执行“则”下面的代码，如果ture里的表达式为假，则执行“否则”下面的代码。
 
-![图片不存在](./media/937794b4033c45b260c0e858234af3c8.png)
+![Img](./media/D41.png)
 
 光照强度检测，检测到光照强度模拟值大于200。
 
-![图片不存在](./media/59e4602aa26857ec6e6611e44910cafa.png)
+![Img](./media/D34.png)
 
 在Microbit主板上的LED点阵上绘制特定图案。
 
 ---
 
-项目35 声控灯
+### 项目35 声控灯
 
-1. 项目介绍：
+#### 1. 项目介绍：
 
 如今智能家居发展迅速，你使用过智能家居当中的智能声控灯吗？当我们跺跺脚或者拍拍手时，智能声控灯自动亮起；当没有声音时，智能声控灯处于熄灭状态。智能声控灯上安装有声音探测传感器，这些传感器将外界声音的大小，转换成对应数值。智能声控灯设置一个临界点，当声音转换后对应的数值超过该临界点时，灯光亮起一段时间。 
 
 在这一实验课程中，我们将声音传感器和LED灯组合实验，学习制作一个最简单的智能声控灯。
 
-2. 项目元件：
+#### 2. 项目元件：
 
-|![图片不存在](./media/e0c47bb1cc4a5178b9005dba833f7fd5.png)|![图片不存在](./media/d442bc0b78f29946e69381e0403d5b7c.png)| ![图片不存在](./media/81a0c58c8464b10d045884226845110c.png)|
+|![Img](./media/0.png)|![Img](./media/116.png)| ![Img](./media/177.png)|
 | :--: | :--: | :--: |
 |Micro:bit主板*1|面包板*1|Micro:bit扩展板*1|
-| ![图片不存在](./media/7b669a255e2eda49d5aff5b4605891bd.png)|![图片不存在](./media/11f324f82f890b0691f134e1ea7a3765.png)| ![图片不存在](./media/8d920d12138bd3b4e62f02cecc2c63a3.png)|
+| ![Img](./media/C7.png)|![Img](./media/118.png)| ![Img](./media/119.png)|
 |声音传感器模块*1|220Ω电阻*1|面包板连接线若干|
-|![图片不存在](./media/a6ff46e05db89a18ffe62f2f6c66c701.png)|![图片不存在](./media/dda94299cc2abaff2c9cb8ff7ce365ff.jpg)|![图片不存在](./media/28c28e6163de71f861c1f8f9bf621ee2.png)| 
+|![Img](./media/115.png)|![Img](./media/137.jpg)|![Img](./media/117.png)| 
 |MicroUSB线*1|公对母杜邦线若干|红色LED*1| 
 
-3. 项目接线图：
+#### 3. 项目接线图：
 
-![图片不存在](./media/51d3b4727e409b273164034fb220ac44.png)
+![Img](./media/D25.png)
 
-4. 项目代码：
+#### 4. 项目代码：
 
 <span style="color: rgb(255, 76, 65);">注意：</span>代码中的阈值200可以根据实际情况更改的。
 
-![图片不存在](./media/e8242116f5169b26a029bf3195595122.png)
+![Img](./media/D26.png)
 
-5. 项目现象：
+#### 5. 项目现象：
 
-按照接线图正确接好各元器件，将代码上传至Micro:bit主板。上传成功后，利用MicroUSB线连接到计算机上电，可以看到的现象是：对准模块上的MIC头大声说话（或大呼气），当声音传感器接收到的声音对应的模拟值大于300时，Micro:bit主板上的LED点阵显示“![图片不存在](./media/0d6ef88f5c9722cc9742c8d557181649.png)”图案，外接LED灯快速闪烁；否则，Micro:bit主板上的LED点阵显示“![图片不存在](./media/b2ca88ca6961398b7b45aa53305ad9ac.png)”图案，外接LED灯熄灭。
+按照接线图正确接好各元器件，将代码上传至Micro:bit主板。上传成功后，利用MicroUSB线连接到计算机上电，可以看到的现象是：对准模块上的MIC头大声说话（或大呼气），当声音传感器接收到的声音对应的模拟值大于300时，Micro:bit主板上的LED点阵显示“![Img](./media/D40.png)”图案，外接LED灯快速闪烁；否则，Micro:bit主板上的LED点阵显示“![Img](./media/147.png)”图案，外接LED灯熄灭。
 
-![图片不存在](./media/0279ce5a7ca3a797096572f4022d511a.jpg)
+![Img](./media/ABC4.jpg)
 
-6. 代码说明:
+#### 6. 代码说明:
 
 可以参照项目34的代码说明，这里就不多做介绍了。
 
 ---
 
-项目36 雨水警报
+### 项目36 雨水警报
 
-1. 项目介绍：
+#### 1. 项目介绍：
 
 前面的项目中我们已经学习了水滴传感器的工作原理，那么，在本项目中，我们将结合水滴传感器、有源蜂鸣器和LED灯来模拟雨水警报。
 
-2. 项目元件：
+#### 2. 项目元件：
 
-|![图片不存在](./media/e0c47bb1cc4a5178b9005dba833f7fd5.png)|![图片不存在](./media/d442bc0b78f29946e69381e0403d5b7c.png)|![图片不存在](./media/3ee049150a7d8652a0d07b3b451b3346.png)|![图片不存在](./media/08cac8e036b616593db2d11a13d7922d.png)|
+|![Img](./media/0.png)|![Img](./media/116.png)|![Img](./media/C6.png)|![Img](./media/136.png)|
 | :--: | :--: | :--: |:--: |
 |Micro:bit主板*1|面包板*1|水滴传感器模块*1|有源蜂鸣器模块*1|
-|![图片不存在](./media/dda94299cc2abaff2c9cb8ff7ce365ff.jpg)|![图片不存在](./media/a6ff46e05db89a18ffe62f2f6c66c701.png)|![图片不存在](./media/81a0c58c8464b10d045884226845110c.png)| ![图片不存在](./media/8d920d12138bd3b4e62f02cecc2c63a3.png)|
+|![Img](./media/137.jpg)|![Img](./media/115.png)|![Img](./media/177.png)| ![Img](./media/119.png)|
 |公对母杜邦线若干|Micro USB线*1|Micro:bit扩展板*1|面包板连接线若干|
-|![图片不存在](./media/28c28e6163de71f861c1f8f9bf621ee2.png)|![图片不存在](./media/11f324f82f890b0691f134e1ea7a3765.png) |   |   |
+|![Img](./media/117.png)|![Img](./media/118.png) |   |   |
 |红色LED*1|220Ω电阻*1 |     |     |
 
-3. 项目接线图：
+#### 3. 项目接线图：
 
-![图片不存在](./media/83903ff6871c404a2c45c85b43f26bdd.png)
+![Img](./media/D27.png)
 
-4. 项目代码：
+#### 4. 项目代码：
 
 <span style="color: rgb(255, 76, 65);">注意：</span>代码中的阈值300可以根据实际情况更改的。
 
-![图片不存在](./media/9ad0cf2c3c6b0b685c0cf48a76fb719b.png)
+![Img](./media/D28.png)
 
-5. 项目现象：
+#### 5. 项目现象：
 
-按照接线图正确接好各元器件，将代码上传至Micro:bit主板。上传成功后，利用MicroUSB线连接到计算机上电，可以看到的现象是：在水滴传感器模块上的感应区滴一两滴水，当水滴传感器检测水量大小输出的模拟值大于800时，Micro:bit主板上的LED点阵显示“![图片不存在](./media/6c65bbb935d0b5bd5a79266b565a68d1.png)”图案，有源蜂鸣器发出警报，外接LED灯快速闪烁。否则，Micro:bit主板上的LED点阵显示“![图片不存在](./media/b2ca88ca6961398b7b45aa53305ad9ac.png)”图案，有源蜂鸣器不发声，外接LED灯熄灭。
+按照接线图正确接好各元器件，将代码上传至Micro:bit主板。上传成功后，利用MicroUSB线连接到计算机上电，可以看到的现象是：在水滴传感器模块上的感应区滴一两滴水，当水滴传感器检测水量大小输出的模拟值大于800时，Micro:bit主板上的LED点阵显示“![Img](./media/146.png)”图案，有源蜂鸣器发出警报，外接LED灯快速闪烁。否则，Micro:bit主板上的LED点阵显示“![Img](./media/147.png)”图案，有源蜂鸣器不发声，外接LED灯熄灭。
 
-![图片不存在](./media/ad6b6b46283ec44058d5ff38ee028303.jpg)
+![Img](./media/ABC3.jpg)
 
-6. 代码说明:
+#### 6. 代码说明:
 
 可以参照项目34的代码说明，这里就不多做介绍了。
 
 ---
 
-项目37 烟雾报警器
+### 项目37 烟雾报警器
 
-1. 项目介绍：
+#### 1. 项目介绍：
 
 在前面课程中，我们学习了如何使用有源蜂鸣器模块、学习了如何使用MQ-2 烟雾传感器检测可燃气体、还学会了如何控制LCD 1602显示屏显示数字或字符。这一课程，我们尝试着将这三个实验结合在一起，制作一个烟雾报警器。制作思路是通过烟雾传感器测试出可燃气体的浓度，然后利用检测结果控制有源蜂鸣器报警、LCD 1602显示屏显示检测到的值。
 
-2. 项目元件：
+#### 2. 项目元件：
 
-|![图片不存在](./media/e0c47bb1cc4a5178b9005dba833f7fd5.png)|![图片不存在](./media/d442bc0b78f29946e69381e0403d5b7c.png)|![图片不存在](./media/76f627868e96dc6bb14bfff4afc44300.png)|![图片不存在](./media/08cac8e036b616593db2d11a13d7922d.png)|
+|![Img](./media/0.png)|![Img](./media/116.png)|![Img](./media/142.png)|![Img](./media/136.png)|
 | :--: | :--: | :--: |:--: |
 |Micro:bit主板*1|面包板*1|模拟气体(MQ-2)传感器模块*1|有源蜂鸣器模块*1|
-|![图片不存在](./media/dda94299cc2abaff2c9cb8ff7ce365ff.jpg)|![图片不存在](./media/a6ff46e05db89a18ffe62f2f6c66c701.png)|![图片不存在](./media/81a0c58c8464b10d045884226845110c.png)| ![图片不存在](./media/8d920d12138bd3b4e62f02cecc2c63a3.png)|  
+|![Img](./media/137.jpg)|![Img](./media/115.png)|![Img](./media/177.png)| ![Img](./media/119.png)|  
 |公对母杜邦线若干|Micro USB线*1|Micro:bit扩展板*1|面包板连接线若干|
-|![图片不存在](./media/08e338f485a7699613f8e902884a1991.png)|![图片不存在](./media/bae3eacd95d794ed928a1d837f2073c6.png)|![图片不存在](./media/dc4d439a9c04b810960e497d95d3da88.png)|![图片不存在](./media/5a0d069fdb6c0f5901be9f9e2bd07e7d.png) |
+|![Img](./media/C27.png)|![Img](./media/178.png)|![Img](./media/A26.png)|![Img](./media/A25.png) |
 |LCD1602显示屏模块*1|电源适配器*1|面包板专用电源模块*1| 一字螺丝刀*1 |
-3. 项目接线图：
+#### 3. 项目接线图：
 
-![图片不存在](./media/9f8d2f7f4bca0cd66dae8cf9aa9f6b14.png)
+![Img](./media/D42.png)
 
-4. 项目代码：
+#### 4. 项目代码：
 
 <span style="color: rgb(255, 76, 65);">注意：</span>代码中的阈值300可以根据实际情况更改的。
 
-![图片不存在](./media/fcc932d4f6d6bed7277e1801f82123fe.png)
+![Img](./media/D43.png)
 
-5. 项目现象：
+#### 5. 项目现象：
 
 按照接线图正确接好各元器件，将代码上传至Micro:bit主板。上传成功后，<span style="color: rgb(255, 169, 0);">外接电源供电，将面包板专用电源模块上的拨码开关拨到+5V端</span>。可以看到的现象是：当模拟气体(MQ-2)传感器检测到烟雾或可燃性气体时，你会看到的现象是：1602LCD显示屏显示烟雾或可燃性气体相应的模拟值，当模拟气体(MQ-2)传感器检测到烟雾或可燃性气体的模拟值大于300时，有源蜂鸣器发出警报。
 
-![图片不存在](./media/d10abea8836f41c24ba3053760f45fa6.jpg)
+![Img](./media/AB2.jpg)
 
-6. 代码说明:
+#### 6. 代码说明:
 
 可以参照项目29和项目34的代码说明，这里就不多做介绍了。
 
 ---
 
-项目38 模拟生活场景
+### 项目38 模拟生活场景
 
-1. 项目介绍：
+#### 1. 项目介绍：
 
 在前面我们做了很多项目实验，我们已经学习了所有的模块和传感器的使用方法，也学习了将它们搭配在一起组合实验。在这一项目实验中我们将搭配更多的模块和传感器组合在一起来模拟生活场景。
 
-2. 项目元件：
+#### 2. 项目元件：
 
-|![图片不存在](./media/e0c47bb1cc4a5178b9005dba833f7fd5.png)|![图片不存在](./media/d442bc0b78f29946e69381e0403d5b7c.png)|![图片不存在](./media/76f627868e96dc6bb14bfff4afc44300.png)|![图片不存在](./media/08cac8e036b616593db2d11a13d7922d.png)|
+|![Img](./media/0.png)|![Img](./media/116.png)|![Img](./media/142.png)|![Img](./media/136.png)|
 | :--: | :--: | :--: |:--: |
 |Micro:bit主板*1|面包板*1|模拟气体(MQ-2)传感器模块*1|有源蜂鸣器模块*1|
-|![图片不存在](./media/3ee049150a7d8652a0d07b3b451b3346.png)|![图片不存在](./media/7b669a255e2eda49d5aff5b4605891bd.png)|![图片不存在](./media/0cb891d41725d75b702317477bd2441f.png)|![图片不存在](./media/0f9d66d0470afaf39a8cec2c76abaca1.png)|
+|![Img](./media/C6.png)|![Img](./media/C7.png)|![Img](./media/C4.png)|![Img](./media/C3.png)|
 |水滴传感器模块*1|声音传感器模块*1|电容触摸传感器模块*1|火焰传感器模块*1|
-|![图片不存在](./media/08e338f485a7699613f8e902884a1991.png)|![图片不存在](./media/dda94299cc2abaff2c9cb8ff7ce365ff.jpg)|![图片不存在](./media/a6ff46e05db89a18ffe62f2f6c66c701.png)| ![图片不存在](./media/8d920d12138bd3b4e62f02cecc2c63a3.png)|
+|![Img](./media/C27.png)|![Img](./media/137.jpg)|![Img](./media/115.png)| ![Img](./media/119.png)|
 |LCD1602显示屏模块*1|公对母杜邦线若干|MicroUSB线*1|面包板连接线若干|
-![图片不存在](./media/81a0c58c8464b10d045884226845110c.png)|![图片不存在](./media/28c28e6163de71f861c1f8f9bf621ee2.png)|![图片不存在](./media/11f324f82f890b0691f134e1ea7a3765.png)| ![图片不存在](./media/5a0d069fdb6c0f5901be9f9e2bd07e7d.png)|
+![Img](./media/177.png)|![Img](./media/117.png)|![Img](./media/118.png)| ![Img](./media/A25.png)|
 |Micro:bit扩展板*1|红色LED*1|220Ω电阻*1|一字螺丝刀*1 |
-|![图片不存在](./media/dc4d439a9c04b810960e497d95d3da88.png)|![图片不存在](./media/bae3eacd95d794ed928a1d837f2073c6.png)|    |    |
+|![Img](./media/A26.png)|![Img](./media/178.png)|    |    |
 |电源适配器*1|面包板专用电源模块*1|    |    |
 
-3. 项目接线图：
+#### 3. 项目接线图：
 
-![图片不存在](./media/991fb10cea17ea48065cbbb19457b95a.png)
+![Img](./media/D45.png)
 
-4. 项目代码：
+#### 4. 项目代码：
 
 <span style="color: rgb(255, 76, 65);">注意：</span>代码中的阈值可以根据实际情况更改的。
 
-![图片不存在](./media/0fadb19b5902e70c0a551212d75a9fc2.png)
+![Img](./media/D44.png)
 
-5. 项目现象：
+#### 5. 项目现象：
 
 按照接线图正确接好各元器件，将代码上传至Micro:bit主板。项目代码上传成功后，<span style="color: rgb(255, 169, 0);">外接电源供电，将面包板专用电源模块上的拨码开关拨到+5V端</span>。你会看到的现象及功能如下：
 
@@ -2446,9 +2446,9 @@ LCD1602 显示屏使用时需要至少7个IO口才能驱动起来，占用的IO�
 
 （5）火灾警报：当火焰传感器检测到火焰时，模块上的板载红色LED灯点亮，同时有源蜂鸣器发出警报，LED灯快速闪烁；否则蜂鸣器不响，LED灯不亮。
 
-![图片不存在](./media/a8b4eb757d9c007b44cacc25cad2392f.jpg)
+![Img](./media/AB1.jpg)
 
-6. 代码说明:
+#### 6. 代码说明:
 
 可以参照前面的项目实验的代码说明，这里就不多做介绍了。
 

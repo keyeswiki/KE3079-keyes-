@@ -42,7 +42,7 @@ keyes商标和徽标是KEYES DIY ROBOT co.,LTD的版权,任何人和公司在没
 
 # Keyes 模拟智能家居综合套件：
 
-![图片不存在](./media/48bda829ab5fc19ee059592c9f71c9fb.jpg)
+![Img](./media/ABC.jpg)
 
 ---
 
@@ -58,32 +58,32 @@ keyes商标和徽标是KEYES DIY ROBOT co.,LTD的版权,任何人和公司在没
 
 | 序号 | 名称 | 数量 | 图片 |
 | :--: | :--: | :--: | :--: |
-| 1 | 面包板 | 1 | ![图片不存在](./media/b7c6a61f9050e53f64bdeca423a32892.png)|
-| 2 | 模拟气体(MQ-2)传感器模块 | 1 | ![图片不存在](./media/76f627868e96dc6bb14bfff4afc44300.png) |
-| 3 | 人体红外热释传感器模块 |1|![图片不存在](./media/da669743d7e2f9e1880430b0ab12ca06.png)|
-| 4 | 避障传感器模块 |1|![图片不存在](./media/06763561566221a1869025569aa0f947.png)|
-| 5 | 火焰传感器模块 |1|![图片不存在](./media/0f9d66d0470afaf39a8cec2c76abaca1.png)|
-| 6 | 电容触摸传感器模块 |1|![图片不存在](./media/0cb891d41725d75b702317477bd2441f.png)|
-| 7 | 光敏传感器模块 |1|![图片不存在](./media/64f4a9e4d9b86ff8b0ef8b66afabffe0.png)|
-| 8 | 水滴传感器模块 |1|![图片不存在](./media/3ee049150a7d8652a0d07b3b451b3346.png)|
-| 9 | 声音传感器模块 |1|![图片不存在](./media/7b669a255e2eda49d5aff5b4605891bd.png)|
-| 10 | 5V 单路继电器模块 | 1 | ![图片不存在](./media/1677c94f2390adeb3df19bfabd6ced88.png) |
-| 11 | 有源蜂鸣器模块 | 1 | ![图片不存在](./media/08cac8e036b616593db2d11a13d7922d.png) |
-| 12  |面包板专用电源模块 |1|![图片不存在](./media/62ad1c318f4507c38556f376c502bbe9.png)|
-|13 | 220Ω电阻 | 10 | ![图片不存在](./media/83dd3936e779ba45cddf56600115789d.png) |
-| 14 | 1KΩ电阻 | 10 | ![图片不存在](./media/9b934d4a221b3b257a455c3b3c4228e2.png)|
-| 15 | 红色LED | 5 |![图片不存在](./media/28c28e6163de71f861c1f8f9bf621ee2.png)|
-| 16 | 黄色LED | 5 | ![图片不存在](./media/538628fed136c06e104ae01b69774d34.png)|
-| 17 | 蓝色LED | 5 |![图片不存在](./media/f6bbd58a5d3ad73cbbb4f9dc6dbebce0.png) |
-| 18 | 绿色LED | 5 |![图片不存在](./media/cede9aadb081f8efbe1aa2884452296f.png) |
-| 19 | 白色LED | 5 | ![图片不存在](./media/8aebcf71e0db1a7f97458ee667b22878.png)|
-| 20 | 一字型螺丝刀  | 1 |![图片不存在](./media/f5504973a1c7bd3a74e8a9370a3c2358.png)|
-| 21 |公对母杜邦线|1| ![图片不存在](./media/dda94299cc2abaff2c9cb8ff7ce365ff.jpg)|
-| 22 |母对母杜邦线|1| ![图片不存在](./media/69e6d113c252cd1742d38913cb2f1b5b.png)|
-| 23 | 面包板连接线 | 1 | ![图片不存在](./media/b146f1221b43b628375e658c8c0bc91f.png)|
-| 24 |电阻卡 | 1 |![图片不存在](./media/443cb9da6e229e8e2ec048855e7dc367.png) |
-| 25 | 电源适配器 | 1 | ![图片不存在](./media/20a54fcaa52b0e56f8f185644cad8c12.png)|
-| 26 |NPN晶体管(S8050) | 2 | ![图片不存在](./media/818eeb51a2d73e4151c7846437d31289.png)|
+| 1 | 面包板 | 1 | ![Img](./media/1.png)|
+| 2 | 模拟气体(MQ-2)传感器模块 | 1 | ![Img](./media/2.png) |
+| 3 | 人体红外热释传感器模块 |1|![Img](./media/22.png)|
+| 4 | 避障传感器模块 |1|![Img](./media/23.png)|
+| 5 | 火焰传感器模块 |1|![Img](./media/24.png)|
+| 6 | 电容触摸传感器模块 |1|![Img](./media/25.png)|
+| 7 | 光敏传感器模块 |1|![Img](./media/26.png)|
+| 8 | 水滴传感器模块 |1|![Img](./media/27.png)|
+| 9 | 声音传感器模块 |1|![Img](./media/28.png)|
+| 10 | 5V 单路继电器模块 | 1 | ![Img](./media/3.png) |
+| 11 | 有源蜂鸣器模块 | 1 | ![Img](./media/4.png) |
+| 12  |面包板专用电源模块 |1|![Img](./media/5.png)|
+|13 | 220Ω电阻 | 10 | ![Img](./media/6.png) |
+| 14 | 1KΩ电阻 | 10 | ![Img](./media/7.png)|
+| 15 | 红色LED | 5 |![Img](./media/8.png)|
+| 16 | 黄色LED | 5 | ![Img](./media/9.png)|
+| 17 | 蓝色LED | 5 |![Img](./media/10.png) |
+| 18 | 绿色LED | 5 |![Img](./media/11.png) |
+| 19 | 白色LED | 5 | ![Img](./media/12.png)|
+| 20 | 一字型螺丝刀  | 1 |![Img](./media/13.png)|
+| 21 |公对母杜邦线|1| ![Img](./media/16.jpg)|
+| 22 |母对母杜邦线|1| ![Img](./media/21.png)|
+| 23 | 面包板连接线 | 1 | ![Img](./media/17.png)|
+| 24 |电阻卡 | 1 |![Img](./media/18.png) |
+| 25 | 电源适配器 | 1 | ![Img](./media/20.png)|
+| 26 |NPN晶体管(S8050) | 2 | ![Img](./media/29.png)|
 
 ---
 
@@ -108,6 +108,8 @@ keyes商标和徽标是KEYES DIY ROBOT co.,LTD的版权,任何人和公司在没
 * [9.不配主板_不需编程_教程](9.不配主板_不需编程_教程/不配主板_不需编程_教程.md)
 
 * [代码集](代码集.zip)
+
+* [库文件](库文件.zip)
 
 * [其他相关资料](其他相关资料.zip)
 
