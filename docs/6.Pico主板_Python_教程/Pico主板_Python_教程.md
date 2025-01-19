@@ -163,12 +163,12 @@ RUN–––可以启用或禁用RP2040微控制器，也可以将其复位。
 
 ```Python
 print("Hello World!")
-print("Welcome to Keyestudio")
+print("Welcome to keyes ")
 ```
 
 #### 5. 项目现象：
  
-利用MicroUSB线连接到计算机上电，单击![Img](./media/52.png)来执行程序代码。代码开始执行，你会看到的现象是：“Shell”窗口打印出“Hello World!”、“Welcome to Keyestudio”。
+利用MicroUSB线连接到计算机上电，单击![Img](./media/52.png)来执行程序代码。代码开始执行，你会看到的现象是：“Shell”窗口打印出“Hello World!”、“Welcome to keyes ”。
 
 ![Img](./media/53.png)
 
