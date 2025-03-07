@@ -98,7 +98,7 @@ RUN–––可以启用或禁用RP2040微控制器，也可以将其复位。
 
 ## 2. Arduino IDE + 树莓派Pico的下载、安装和使用方法
 
-参考链接：[https://www.keyesrobot.cn/projects/Arduino/en/latest/](https://www.keyesrobot.cn/projects/Arduino/en/latest/)
+参考链接：[https://www.keyesrobot.cn/projects/Arduino/zh-cn/latest/](https://www.keyesrobot.cn/projects/Arduino/zh-cn/latest/)
 
 <span style="color: rgb(255, 76, 65);">注意：</span><span style="background:#ff0;color:#000">Pico主板_C_教程里所有课程使用的是Arduino IDE版本：2.1.1 。</span>
 

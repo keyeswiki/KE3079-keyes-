@@ -5,7 +5,9 @@
 
    README.md
    docs/keyestudio/index
-   docs/index.md
+   docs/产品介绍.md
+   docs/产品清单.md
+   docs/资料下载.md
    docs/1.UNO主板_C_教程/UNO主板_C_教程.md
    docs/2.UNO主板_KidsBlock_教程/UNO主板_KidsBlock_教程.md
    docs/3.UNO主板_Mixly_教程/UNO主板_Mixly_教程.md

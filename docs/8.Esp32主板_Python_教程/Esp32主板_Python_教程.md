@@ -90,7 +90,7 @@ WiFi频率范围：2.4 GHz ~ 2.5 GHz
 
 ## 2. Thonny IDE 的下载、安装和使用方法
 
-参考链接：[https://www.keyesrobot.cn/projects/Thonny/en/latest/](https://www.keyesrobot.cn/projects/Thonny/en/latest/)
+参考链接：[https://www.keyesrobot.cn/projects/Thonny/zh-cn/latest/](https://www.keyesrobot.cn/projects/Thonny/zh-cn/latest/)
 
 <span style="color: rgb(255, 76, 65);">注意：</span><span style="background:#ff0;color:#000">Esp32主板_Python_教程使用的是ESP32-Thonny IDE 的下载、安装和使用方法。</span>
 
@@ -151,12 +151,12 @@ WiFi频率范围：2.4 GHz ~ 2.5 GHz
 
 ```Python
 print("Hello World!")
-print("Welcome to keyes ")
+print("Welcome to Keyestudio")
 ```
 
 #### 5. 项目现象：
  
-利用MicroUSB线连接到计算机上电，单击![Img](./media/52.png)来执行程序代码。代码开始执行，你会看到的现象是：“Shell”窗口打印出“Hello World!”、“Welcome to keyes ”。
+利用MicroUSB线连接到计算机上电，单击![Img](./media/52.png)来执行程序代码。代码开始执行，你会看到的现象是：“Shell”窗口打印出“Hello World!”、“Welcome to Keyestudio”。
 
 ![Img](./media/53.png)
 

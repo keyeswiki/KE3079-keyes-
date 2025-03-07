@@ -127,9 +127,9 @@ g. 禁止放在金属制品上使用，以免发生短路。
 
 ## 2. 关于MakeCode编辑器
 
-MakeCode编辑器网站：[https://microbit.org/code/](https://microbit.org/code/) 
+MakeCode编辑器网站：[https://makecode.microbit.org/#editor](https://makecode.microbit.org/#editor) 
 
-MakeCode编辑器详细的使用说明方法请参考链接：[https://www.keyesrobot.cn/projects/MakeCode/en/latest/](https://www.keyesrobot.cn/projects/MakeCode/en/latest/)
+MakeCode编辑器详细的使用说明方法请参考链接：[https://www.keyesrobot.cn/projects/MakeCode/zh-cn/latest/](https://www.keyesrobot.cn/projects/MakeCode/zh-cn/latest/)
 
 ---
 

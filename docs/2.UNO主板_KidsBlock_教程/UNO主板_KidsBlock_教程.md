@@ -64,7 +64,7 @@ IIC通信端口：A4为SDA，A5为SCL
 
 ## 2. KidsBlock IDE 的下载、安装和使用方法：
 
-参考链接：[https://www.keyesrobot.cn/projects/KidsBlock/en/latest/](https://www.keyesrobot.cn/projects/KidsBlock/en/latest/)
+参考链接：[https://www.keyesrobot.cn/projects/KidsBlock/zh-cn/latest/](https://www.keyesrobot.cn/projects/KidsBlock/zh-cn/latest/)
 
 ---
 

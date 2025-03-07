@@ -66,7 +66,6 @@ IIC通信端口：A4为SDA，A5为SCL
 
 Mixly软件下载、安装的参考链接：[https://mixly.org/bnu-maker/mixl2.0rc](https://mixly.org/bnu-maker/mixl2.0rc)
 
-
 Mixly软件使用方法的参考链接：[https://mixly.readthedocs.io/zh-cn/latest/](https://mixly.readthedocs.io/zh-cn/latest/)
 
 
